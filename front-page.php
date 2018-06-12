@@ -5,9 +5,9 @@
  * @package QOD_Starter_Theme
  */
 
-get_header(); ?>
+// get_header(); ?>
 
-<?php get_template_part( 'template-parts/content' ); ?>
+<!-- <?php get_template_part( 'template-parts/content' ); ?> -->
 
     <!DOCTYPE html>
         <html lang="en">
@@ -19,20 +19,33 @@ get_header(); ?>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         </head>
+
     <body>
-        <section class="front-page-info">
-            <nav>
+
+  <section class="front-page-info">
+
+      <header class="front-header">
+          <img src="/icons/Drop-down.png">
+
+            <nav class="nav-bar">
               <a href="/html/">Partners</a> |
               <a href="/css/">Projects</a> |
-              <a href="/js/">More<img src="/icons/Drop_down.png"</a> |
-              <a href="/jquery/">jQuery</a>
+              <a href="/js/">More</a> |
+
             </nav>
 
+            <nav class="sign-up-nav">
+               <a href="">Sign in</a> |
+               <a href="">Sign up free</a>
+            </nav>
+     </header>
 
 
 
 
-          </section>
+
+
+</section>
 
 
 
@@ -42,5 +55,3 @@ get_header(); ?>
 
     </body>
           </html>
-
-          <?php get_footer(); ?>
