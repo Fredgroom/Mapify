@@ -1,4 +1,4 @@
-# Quotes on Dev Starter
+# Mapify theme
 
 A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
 

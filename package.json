@@ -1,5 +1,5 @@
 {
-  "name": "quotesondev-starter",
+  "name": "mapify-theme",
   "version": "1.0.0",
   "description": "A WordPress starter theme for the Quotes on Dev project, forked from Underscores.",
   "main": "gulpfile.js",

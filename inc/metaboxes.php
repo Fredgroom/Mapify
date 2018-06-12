@@ -14,10 +14,10 @@ if ( file_exists( get_template_directory() . '/inc/cmb2/init.php' ) ) {
  * Add metaboxes.
  */
 
-function qod_register_metaboxes() {
+function mapify_register_metaboxes() {
 
 	// Start with an underscore to hide fields from custom fields list
-	$prefix = '_qod_';
+	$prefix = '_mapify_';
 
 	$quote_meta = new_cmb2_box( array(
 		'id'            => $prefix . 'quote_metabox',
@@ -43,4 +43,4 @@ function qod_register_metaboxes() {
 	) );
 }
 
-add_action( 'cmb2_admin_init', 'qod_register_metaboxes' );
+add_action( 'cmb2_admin_init', 'mapify_register_metaboxes' );

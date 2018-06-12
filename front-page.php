@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package QOD_Starter_Theme
+ * @package mapify_theme
  */
 
 get_header(); ?>
@@ -14,13 +14,9 @@ get_header(); ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-<<<<<<< HEAD
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-=======
 
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 
->>>>>>> master
 				</header>
 
 			<?php endif; ?>

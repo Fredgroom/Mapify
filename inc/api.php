@@ -12,7 +12,7 @@
  */
 add_action( 'rest_api_init', function() {
   foreach ( get_post_types( array( 'show_in_rest' => true ), 'objects' ) as $post_type ) {
-    add_filter( 'rest_' . $post_type->name . '_query', 'qod_rest_api_filter_add_filter_param', 10, 2 );
+    add_filter( 'rest_' . $post_type->name . '_query', 'mapify_rest_api_filter_add_filter_param', 10, 2 );
   }
 });
 
@@ -23,7 +23,7 @@ add_action( 'rest_api_init', function() {
  * @param  WP_REST_Request $request Full details about the request.
  * @return array $args.
  */
-function qod_rest_api_filter_add_filter_param( $args, $request ) {
+function mapify_rest_api_filter_add_filter_param( $args, $request ) {
   // Bail out if no filter parameter is set.
   if ( empty( $request['filter'] ) || ! is_array( $request['filter'] ) ) {
     return $args;
@@ -54,28 +54,28 @@ add_action( 'rest_api_init', function() {
     'post',
     'post_status',
     array(
-      'get_callback'    => 'qod_get_post_status',
-      'update_callback' => 'qod_update_post_status',
+      'get_callback'    => 'mapify_get_post_status',
+      'update_callback' => 'mapify_update_post_status',
       'schema'          => null,
     )
   );
     
   register_rest_field( 
     'post',
-    '_qod_quote_source',
+    '_mapify_quote_source',
     array(
-      'get_callback'    => 'qod_get_quote_meta_fields',
-      'update_callback' => 'qod_update_quote_meta_fields',
+      'get_callback'    => 'mapify_get_quote_meta_fields',
+      'update_callback' => 'mapify_update_quote_meta_fields',
       'schema'          => null,
     )
   );
     
   register_rest_field( 
     'post',
-    '_qod_quote_source_url',
+    '_mapify_quote_source_url',
     array(
-      'get_callback'    => 'qod_get_quote_meta_fields',
-      'update_callback' => 'qod_update_quote_meta_fields',
+      'get_callback'    => 'mapify_get_quote_meta_fields',
+      'update_callback' => 'mapify_update_quote_meta_fields',
       'schema'          => null,
     )
   );
@@ -90,7 +90,7 @@ add_action( 'rest_api_init', function() {
  *
  * @return mixed
  */
-function qod_get_post_status( $object, $field_name, $request ) {
+function mapify_get_post_status( $object, $field_name, $request ) {
   $post = get_post( $object['id'] );
   return $post->post_status;
 }
@@ -106,7 +106,7 @@ function qod_get_post_status( $object, $field_name, $request ) {
  *
  * @return bool|int
  */
-function qod_update_post_status( $value, $object, $field_name ) {
+function mapify_update_post_status( $value, $object, $field_name ) {
   if ( ! $value || ! is_string( $value ) ) {
     return;
   }
@@ -125,7 +125,7 @@ function qod_update_post_status( $value, $object, $field_name ) {
  * 
  * @return mixed
  */
-function qod_get_quote_meta_fields( $object, $field_name, $request ) {
+function mapify_get_quote_meta_fields( $object, $field_name, $request ) {
   return get_post_meta( $object['id'], $field_name, true );
 }
       
@@ -140,7 +140,7 @@ function qod_get_quote_meta_fields( $object, $field_name, $request ) {
  *
  * @return bool|int
  */
-function qod_update_quote_meta_fields( $value, $object, $field_name ) {
+function mapify_update_quote_meta_fields( $value, $object, $field_name ) {
   if ( ! $value || ! is_string( $value ) ) {
     return;
   }

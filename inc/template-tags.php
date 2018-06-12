@@ -2,13 +2,13 @@
 /**
  * Custom template tags for this theme.
  *
- * @package QOD_Starter_Theme
+ * @package mapify_theme
  */
 
 /**
  * Display navigation to next/previous set of posts when applicable.
  */
-function qod_numbered_pagination( $query_type = '' ) {
+function mapify_numbered_pagination( $query_type = '' ) {
 
 	if ( $query_type ) {
 		$the_query = $query_type;

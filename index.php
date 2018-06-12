@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package QOD_Starter_Theme
+ * @package mapify_theme
  */
 
 get_header(); ?>
