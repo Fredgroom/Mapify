@@ -2,41 +2,45 @@
 /**
  * The main template file.
  *
- * @package mapify_theme
+ * @package QOD_Starter_Theme
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php get_template_part( 'template-parts/content' ); ?>
 
-		<?php if ( have_posts() ) : ?>
+    <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title>Bootstrap Example</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        </head>
+    <body>
+        <section class="front-page-info">
+            <nav>
+              <a href="/html/">Partners</a> |
+              <a href="/css/">Projects</a> |
+              <a href="/js/">More<img src="/icons/Drop_down.png"</a> |
+              <a href="/jquery/">jQuery</a>
+            </nav>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
 
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 
-				</header>
 
-			<?php endif; ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+          </section>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
 
-			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
 
-		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+    </body>
+          </html>
 
-<?php get_footer(); ?>
+          <?php get_footer(); ?>
