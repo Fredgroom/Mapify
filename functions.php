@@ -68,8 +68,8 @@ add_action( 'wp_enqueue_scripts', 'custom_load_bootstrap' );
  */
 function custom_load_bootstrap() {
     wp_enqueue_style( 'bootstrap-css', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css' );
-
-    wp_enqueue_script( 'bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+		//Ryan: This is the correct way to add the bootstrap script
+    wp_enqueue_script( 'bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js', array( 'jquery'), true );
 }
 
 /**
