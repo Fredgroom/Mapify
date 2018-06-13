@@ -132,9 +132,14 @@ a {
 }
 
 .site-header {
-	background:#ffffff;
+	background-color:rgb(255, 255, 255);
 }
 
-.site-header.reverse-header {
+.site-header.reverse-header  {
 	background:red;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
 }
