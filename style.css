@@ -484,6 +484,12 @@ a {
   text-align: right;
   width: 50%; }
 
+.site-header {
+  background: #ffffff; }
+
+.site-header.reverse-header {
+  background: red; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -588,4 +594,3 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
-/* Submit a Quote Page */
