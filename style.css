@@ -579,6 +579,41 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
+/* faq */
+.faq-content-area h1, .faq-content-area h2 {
+  text-align: center; }
+
+.faq-content-area button {
+  width: 100%; }
+
+.faq-content-area .questionCategories {
+  background-color: #fcfcfc; }
+
+.faq-content-area .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .faq-content-area .card-header h5 {
+    width: 75%;
+    background-color: white;
+    border-radius: 2px; }
+
+.faq-content-area .tab-container {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.faq-content-area .tab-container ul.nav.nav-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .home-hero {
   height: 150vh;
   width: 100vw; }
