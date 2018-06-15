@@ -30,12 +30,9 @@
 
   					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
   				</div>
-<!--
-         NEED TO SORT THIS IMG src  -->
-				 <!-- --------------------------------------------------------------
-				 --------------------------------- -->
 
-				<img src="/icons/group-icon.png">
+						<img class="group-icon" src="<?php echo get_template_directory_uri(); ?>/icons/group-icon.png"/>
+
 
 					       <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
                  <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu' ) ); ?>
