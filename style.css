@@ -616,6 +616,9 @@ object {
 .faq-content-area .questionCategories {
   background-color: #fcfcfc; }
 
+.faq-content-area button.btn.btn-link {
+  background-color: #eff4f6; }
+
 .faq-content-area .card-header {
   display: -webkit-box;
   display: -ms-flexbox;
