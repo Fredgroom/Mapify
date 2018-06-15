@@ -19,6 +19,7 @@ get_header(); ?>
 
 			<section class="questionCategories">
 				<h2>Question Categories</h2>
+				<img src="<?php echo get_template_directory_uri();?>/icons/search-icon.png" />
 				<div class="accordion" id="accordionExample">
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -28,7 +29,8 @@ get_header(); ?>
 							<div class="card-header" id="headingOne">
 								<h5 class="mb-0">
 									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#<?php echo $post_slug;?>" aria-expanded="true" aria-controls="collapseOne">
-									<?php echo the_title('<h2 class="entry-title">', '</h2>'); ?>
+									<?php echo the_title('<h4 class="entry-title">', '</h4>'); ?>
+									<img src="<?php echo get_template_directory_uri();?>/icons/grey-triangle.png" />
 									</button>
 								</h5>
 							</div>
@@ -38,7 +40,7 @@ get_header(); ?>
 
 								<div class="tab-container">
 									<ul class="nav nav-tabs">
-										<li class="active"><a data-toggle="tab" href="#answer1"><?php echo CFS()->get( 'ac1-ques1' ); ?></a></li>
+										<li class="active"><a data-toggle="tab" href="#answer1"><?php echo CFS()->get( 'ac1-ques1' );?></a></li>
 										<li><a data-toggle="tab" href="#answer2"><?php echo CFS()->get( 'ac1-ques2' ); ?></a></li>
 										<li><a data-toggle="tab" href="#answer3"><?php echo CFS()->get( 'ac1-ques3' ); ?></a></li>
 										<li><a data-toggle="tab" href="#answer4"><?php echo CFS()->get( 'ac1-ques4' ); ?></a></li>
