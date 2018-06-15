@@ -17,13 +17,22 @@
 
       <h3 class="empower">We empower relationships between people and workplaces</h3>
 
+
           <div class="group-div">
-      <img class="play-copy" src="<?php echo get_template_directory_uri(); ?>/icons/play_copy.png"/>
+      <img class="play-copy" src="<?php echo get_template_directory_uri(); ?>/icons/play.png"/>
           </div>
 
           <div class="mapify-container">
-            <p class="watch-mapify">Watch how Mapify works</p>
+             <p class="watch-mapify">Watch how Mapify works</p>
           </div>
+
+   <div class="phonox-info">
+
+      <img class="phonox-image" src="<?php echo get_template_directory_uri(); ?>/icons/Phonos.png"/>
+
+          <p class="phonox-quote">"The data sharing Mapify offers is incredibly</br>useful when createing and marketing events."</br><span class="phonox-brixton">Phonox, Brixton</span></p>
+   </div>
+
 
       </section>
 
