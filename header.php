@@ -27,10 +27,15 @@
         <nav class="navbar">
   				<div class="site-branding navbar-brand">
   					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-            
+
   					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
   				</div>
+<!--
+         NEED TO SORT THIS IMG src  -->
+				 <!-- --------------------------------------------------------------
+				 --------------------------------- -->
 
+				<img src="/icons/group-icon.png">
 
 					       <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
                  <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu' ) ); ?>

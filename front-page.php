@@ -12,9 +12,10 @@
 
 <section class="home-hero" style="background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4) 0%,rgba(0, 0, 0, 0.4) 100%), #969696 url('<?php echo get_template_directory_uri(); ?>/images/main-bg.jpg'); background-size: cover, cover;">
 
-<h1>CONNECTING COMMUNITIES THROUGH THROUGH HUMAN-CENTERED DATA<h1>
+<h1 class="connecting">CONNECTING COMMUNITIES THROUGH</h1>
+<h2 class="communities">HUMAN-CENTERED DATA</h2>
 
-
+<h3 class="empower">We empower relationships between people and workplaces</h3>
 
 
 </section>
