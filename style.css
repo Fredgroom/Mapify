@@ -450,10 +450,11 @@ a {
   list-style-type: none; }
 
 #primary-menu a {
-  padding-right: 60px;
+  padding-right: 80px;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
-  color: #ffffff; }
+  color: #ffffff;
+  text-shadow: 2px 2px #38312C; }
 
 #secondary-menu {
   display: -webkit-box;
@@ -467,8 +468,9 @@ a {
 #secondary-menu a {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
-  color: blue;
-  padding-right: 60px; }
+  color: #ffffff;
+  padding-right: 80px;
+  text-shadow: 2px 2px #38312C; }
 
 #menu-item-40 a {
   color: #FF3366; }
@@ -578,5 +580,41 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 .home-hero {
-  height: 100vh;
+  height: 150vh;
   width: 100vw; }
+
+.connecting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  color: #ffffff;
+  padding-top: 240px;
+  text-shadow: 2px 2px #38312C; }
+
+.communities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 2px 2px #38312C; }
+
+.empower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #ffffff;
+  text-shadow: 1px 1px #38312C;
+  padding-top: 20px; }
