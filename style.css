@@ -431,8 +431,9 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  height: 80px;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 40px; }
 
 .menu-primary-menu-container {
@@ -579,40 +580,31 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
-/* faq */
-.faq-content-area h1, .faq-content-area h2 {
-  text-align: center; }
+.group-icon {
+  width: 51px;
+  height: 64px; }
 
-.faq-content-area button {
-  width: 100%; }
+.group-div {
+  position: relative; }
 
-.faq-content-area .questionCategories {
-  background-color: #fcfcfc; }
+.play-copy {
+  height: 105px;
+  width: 105px;
+  position: absolute;
+  left: 47%;
+  right: 50%;
+  top: 100px; }
 
-.faq-content-area .card-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .faq-content-area .card-header h5 {
-    width: 75%;
-    background-color: white;
-    border-radius: 2px; }
+.mapify-container {
+  position: relative; }
 
-.faq-content-area .tab-container {
-  display: grid;
-  grid-template-columns: 50% 50%; }
-
-.faq-content-area .tab-container ul.nav.nav-tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+.watch-mapify {
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 25px;
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: 1px 1px #38312C; }
 
 .home-hero {
   height: 150vh;
