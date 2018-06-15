@@ -2,41 +2,22 @@
 /**
  * The main template file.
  *
- * @package mapify_theme
- */
+ * @package QOD_Starter_Theme
+ */ ?>
 
-get_header(); ?>
+<?php get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<!-- <?php // get_template_part( 'template-parts/content' ); ?> -->
 
-		<?php if ( have_posts() ) : ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
+<section class="home-hero" style="background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4) 0%,rgba(0, 0, 0, 0.4) 100%), #969696 url('<?php echo get_template_directory_uri(); ?>/images/main-bg.jpg'); background-size: cover, cover;">
 
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+<h1 class="connecting">CONNECTING COMMUNITIES THROUGH</h1>
+<h2 class="communities">HUMAN-CENTERED DATA</h2>
 
-				</header>
+<h3 class="empower">We empower relationships between people and workplaces</h3>
 
-			<?php endif; ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+</section>
 
 <?php get_footer(); ?>
