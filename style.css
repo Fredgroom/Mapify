@@ -428,6 +428,7 @@ a {
   width: 100%; }
 
 .navbar {
+  position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -695,7 +696,30 @@ object {
 
 .phonox-quote {
   padding-left: 20px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  color: #ffffff; }
 
 .phonox-brixton {
   padding-left: 20px; }
+
+.search-glass {
+  height: 40px;
+  width: 40px;
+  left: 80px; }
+
+@media screen and (max-width: 480px) {
+  .home-hero, .connecting, .communities, .empower {
+    font-size: 20px; }
+  .connecting {
+    padding-bottom: 5px; }
+  .nav-bar, .menu, li {
+    display: none; }
+  .search-glass, #secondary-menu {
+    display: none; }
+  .phonox-info {
+    display: none; }
+  .hamburger-menu {
+    height: 30px;
+    position: absolute;
+    right: 09%;
+    top: 80%; } }

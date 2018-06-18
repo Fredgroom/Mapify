@@ -3,6 +3,8 @@
   width:100vw;
 }
 
+// first heading
+
 .connecting {
   display: flex;
   justify-content: center;
@@ -12,6 +14,8 @@
   text-shadow: 2px 2px #38312C;
 }
 
+// second heading
+
 .communities {
   display: flex;
   justify-content: center;
@@ -19,6 +23,8 @@
   color: #ffffff;
   text-shadow: 2px 2px #38312C;
 }
+
+// subheading
 
 .empower {
   display: flex;
@@ -38,6 +44,8 @@
 .group-div {
   position: relative;
 }
+
+// Mapify white icon
 
 .play-copy {
   height: 95px;
@@ -61,6 +69,8 @@ color: #ffffff;
 text-shadow: 1px 1px #38312C;
 }
 
+// phonox black circle icon and text
+
 .phonox-info {
   display: inline-flex;
 }
@@ -73,8 +83,63 @@ text-shadow: 1px 1px #38312C;
 .phonox-quote {
   padding-left: 20px;
   padding-top: 20px;
+  color: #ffffff;
 }
 
 .phonox-brixton {
   padding-left: 20px;
 }
+
+.search-glass {
+  height: 40px;
+  width: 40px;
+  left: 80px;
+}
+
+
+
+// repsonsive mobile design changes
+
+// changing the font size to 20px for mobile
+
+@media screen and (max-width: 480px) {
+    .home-hero, .connecting, .communities, .empower {
+      font-size: 20px;
+    }
+
+    .empower { }
+
+    .connecting {
+       padding-bottom: 5px;
+     }
+
+// hiding the top nav bar when mobile is viewed
+
+    .nav-bar, .menu, li {
+      display: none;
+    }
+
+// gets rid of search glass icon
+
+    .search-glass, #secondary-menu {
+      display: none;
+    }
+// gets rid of the phonox image
+
+    .phonox-info {
+      display: none;
+    }
+
+    // drop down hamburger menu - still need to create drop down
+
+    .hamburger-menu {
+      height: 30px;
+      position: absolute; right: 09%; top: 80%;
+    }
+
+     .hamburger-menu:hover {
+
+
+     }
+
+    }
