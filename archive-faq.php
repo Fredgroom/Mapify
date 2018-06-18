@@ -41,7 +41,6 @@ get_header(); ?>
 								
 								<div class="tab-container" >
 									<ul class="nav nav-tabs">
-										<li><a data-toggle="tab" href="#answer6"><?php echo CFS()->get( 'ac1-ques6' ); ?></a></li>
 										<?php $Q1 = CFS()->get( 'ac1-ques1' ); ?>
 										<?php $Q2 = CFS()->get( 'ac1-ques2' ); ?>
 										<?php $Q3 = CFS()->get( 'ac1-ques3' ); ?>
