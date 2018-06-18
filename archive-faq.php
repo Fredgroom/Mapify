@@ -29,14 +29,14 @@ get_header(); ?>
 						<div class="card">
 							<div class="card-header" id="headingOne">
 								<h5 class="mb-0">
-									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#<?php echo $post_slug;?>" aria-expanded="true" aria-controls="collapseOne">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#<?php echo $post_slug;?>" aria-expanded="true" aria-controls="collapseOne" data-parent="#accordion">
 									<?php echo the_title('<h4 class="entry-title">', '</h4>'); ?>
 									<img src="<?php echo get_template_directory_uri();?>/icons/grey-triangle.png" />
 									</button>
 								</h5>
 							</div>
 
-							<div id="<?php echo $post_slug;?>" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+							<div id="<?php echo $post_slug;?>" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 								<div class="card-body">
 								
 								<div class="tab-container" >
@@ -115,3 +115,19 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
+<script>
+// if (!$(this)).hasClass('in') {
+// 	$(.in).removeClass('in');
+// });
+
+$(!'.in').click(function() {
+        $('in').removeClass('in');       
+});
+
+$(document).click(function() {
+    if ($!(this).hasClass("in")) {
+        $("div").removeClass('in');
+    } 
+});
+
+</script>
