@@ -4,11 +4,115 @@
 
 /* All Archives Page */
 
+// footer
+  .site-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .mobileFooterMenu {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .social-media img {
+        display: none;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+      }
+  }
+  .desktopFooterMenu {
+    display: none;
+  }
 
+  @media only screen and (min-width: 600px) {
+    
+    .desktopFooterMenu {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .site-footer {
+      display: flex;
+    
+      .social-media {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .social-media img {
+        display: flex;
+        width: 50px;
+    }
+    }
+    .site-info{
+      display: grid;
+      grid-template-columns: 75% 25%;
+    .mobileFooterMenu{
+        display: none;
+      }
+    }
+  }
 
 
 /* faq */
 
+.faq-content-area {
+
+
+  .questionCategories {
+    background-color: rgb(252,252,252);
+  }
+
+  // li:empty {
+  //   display: none;
+  // }
+  
+  ul {
+    margin: 0;
+  }
+
+  button.btn.btn-link {
+  background-color: rgb(255,255,255);
+  width: 100%;
+  border: .5px solid rgb(231,231,231);
+  }
+
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: none;
+  }
+  .nav.tab {
+    border: 0px;
+    li {
+      border: none;
+      a {
+        border: none;
+      }
+    }
+  }
+  .tab-container {
+    background-color: rgb(255,255,255);
+    border: 0px;
+  }
+
+  .tab-content {
+    p {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  
+  li.active {
+    border:  rgb(255,255,255);
+  }
+
+  .card-header {
+    padding: 0px;
+    margin: 0px;
+  }
+}  
+
+@media only screen and (min-width: 600px) {
 .faq-content-area {
 
   h1, h2 {
@@ -16,13 +120,6 @@
   }
   button {
       width: 100%;
-  }
- .questionCategories {
-         background-color: rgb(252,252,252);
-     }
-
-  button.btn.btn-link {
-    background-color: rgb(239,244,246);
   }
 
    .card-header {
@@ -46,4 +143,5 @@
      flex-direction: column;
      }
    }
+}
 }

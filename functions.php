@@ -53,14 +53,29 @@ function mapify_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 }
 add_filter( 'stylesheet_uri', 'mapify_minified_css', 10, 2 );
 
+function red_starter_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html( 'Sidebar' ),
+		'id'            => 'sidebar-1',
+		'description'   => 'Appears in the Sidebar',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'red_starter_widgets_init' );
+
 /**
  * Enqueue scripts and styles.
  */
 function mapify_scripts() {
 	wp_enqueue_style( 'bootstrap-css', '/wp-content/themes/mapify/build/css/bootstrap.min.css' );
+	wp_enqueue_style( 'flickity', '/wp-content/themes/mapify/build/css/flickity.min.css' );
 	wp_enqueue_style( 'mapify-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'bootstrap-js', '/wp-content/themes/mapify/build/js/bootstrap.min.js', array('jquery'), true );
+	wp_enqueue_script( 'flickity-js', '/wp-content/themes/mapify/build/js/flickity.pkgd.min.js', array('jquery'), true );
 	wp_enqueue_script( 'mapify-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 }
 add_action( 'wp_enqueue_scripts', 'mapify_scripts' );

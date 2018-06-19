@@ -32,10 +32,18 @@
   				</div>
 
 						<img class="group-icon" src="<?php echo get_template_directory_uri(); ?>/icons/group-icon.png"/>
-<img class="search-icon" src="<?php echo get_template_directory_uri(); ?>/icons/search-icon.png"/>
+
+						<img class="hamburger-menu" src="<?php echo get_template_directory_uri(); ?>/icons/hamburger-menu.png"/>
+
+
 
 					       <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+								 <img class="search-glass" src="<?php echo get_template_directory_uri(); ?>/icons/search-icon.png"/>
+
                  <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu' ) ); ?>
+
+				
 
 
 				  </nav><!-- #site-navigation -->
