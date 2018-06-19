@@ -53,6 +53,19 @@ function mapify_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 }
 add_filter( 'stylesheet_uri', 'mapify_minified_css', 10, 2 );
 
+function red_starter_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html( 'Sidebar' ),
+		'id'            => 'sidebar-1',
+		'description'   => 'Appears in the Sidebar',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'red_starter_widgets_init' );
+
 /**
  * Enqueue scripts and styles.
  */
