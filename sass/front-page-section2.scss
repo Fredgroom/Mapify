@@ -1,0 +1,44 @@
+
+
+// setting background color and height of the new section
+.how-it-works {
+  background-color: #FCFCFC;
+  height:150vh;
+  width:100vw;
+}
+
+
+.how-it-works-title {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 4%;
+
+}
+
+// flexing the 4 icons in a row
+.how-works-banner {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+
+// flexing the title of each icon
+.icons-title {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+// flexing CONTENT of each icon
+
+.icon-content {
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  text-align: center;
+
+}
