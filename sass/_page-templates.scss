@@ -4,12 +4,62 @@
 
 /* All Archives Page */
 
+// footer
+  .site-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .mobileFooterMenu {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .social-media img {
+        display: none;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+      }
+  }
+  .desktopFooterMenu {
+    display: none;
+  }
 
+  @media only screen and (min-width: 600px) {
+    
+    .desktopFooterMenu {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .site-footer {
+      display: flex;
+    
+      .social-media {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .social-media img {
+        display: flex;
+        width: 50px;
+    }
+    }
+    .site-info{
+      display: grid;
+      grid-template-columns: 75% 25%;
+    .mobileFooterMenu{
+        display: none;
+      }
+    }
+  }
 
 
 /* faq */
 
 .faq-content-area {
+
+
   .questionCategories {
     background-color: rgb(252,252,252);
   }

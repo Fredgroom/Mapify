@@ -108,6 +108,14 @@ get_header(); ?>
 		<h4>We love to help!</h4>
 		
 
+	<Section class="contactUs">
+		<?php echo do_shortcode( '[contact-form-7 id="1234" title="Contact form 1"]' ); ?>
+		<div class="contactUsSocial">
+		<?php get_sidebar(); ?> 
+		</div>
+	
+	</Section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
