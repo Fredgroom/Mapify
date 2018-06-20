@@ -187,3 +187,58 @@ form {
   
 }
 }
+
+// sign-up
+.signUp {
+  display: flex;
+  justify-content: center;
+  form {
+    width: 75vw;
+  }
+  label {
+    width: 100%;
+    input {
+      width: 100%;
+      border: none;
+      background-color: rgb(233,235,236);
+      color: rgb(160,169,177);
+    }
+  }
+  .wpcf7-list-item-label {
+    font-size: 10px;
+  }
+  .wpcf7-list-item {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    margin: 0;
+    margin-bottom: 1em;
+    input {
+      display: flex;
+      justify-self: center;
+    }
+}
+  
+}
+
+
+
+  @media only screen and (min-width: 600px) {
+    .signUp {
+      form {
+        width: 80vw;
+        padding: 15px;
+        input {
+          padding-left: 15px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+      .doubleLine {
+        display: flex;
+        flex-direction: row;
+        p {
+          width: 45%;
+        }
+      }
+  }
+  }
