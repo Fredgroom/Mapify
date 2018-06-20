@@ -58,7 +58,14 @@
 /* faq */
 
 .faq-content-area {
-
+  .contactUsSocial {
+    display: flex;
+    flex-direction: column;
+  }
+  h4 {
+    text-align: center;
+  }
+  
 
   .questionCategories {
     background-color: rgb(252,252,252);
@@ -143,5 +150,40 @@
      flex-direction: column;
      }
    }
+}
+.social-media{
+  width: 50%;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  display: flex;
+  justify-self: center;
+  justify-content: space-around;
+}
+
+.contactUs {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  img {
+    max-height: 60px;
+    max-width: 50px;
+  }
+  input {
+    width: 90%;
+  }
+  textarea {
+    width: 90%;
+  }
+  .wpcf7-submit {
+    width: 50%;
+  }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
 }
 }
