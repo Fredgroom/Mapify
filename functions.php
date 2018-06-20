@@ -71,11 +71,13 @@ add_action( 'widgets_init', 'red_starter_widgets_init' );
  */
 function mapify_scripts() {
 	wp_enqueue_style( 'bootstrap-css', '/wp-content/themes/mapify/build/css/bootstrap.min.css' );
-	wp_enqueue_style( 'flickity', '/wp-content/themes/mapify/build/css/flickity.min.css' );
+	//wp_enqueue_style( 'flickity', '/wp-content/themes/mapify/build/css/flickity.min.css' );
 	wp_enqueue_style( 'mapify-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'font-awesome-cdn', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), '4.4.0' );
+
 	wp_enqueue_script( 'bootstrap-js', '/wp-content/themes/mapify/build/js/bootstrap.min.js', array('jquery'), true );
-	wp_enqueue_script( 'flickity-js', '/wp-content/themes/mapify/build/js/flickity.pkgd.min.js', array('jquery'), true );
+	//wp_enqueue_script( 'flickity-js', '/wp-content/themes/mapify/build/js/flickity.pkgd.min.js', array('jquery'), true );
 	wp_enqueue_script( 'mapify-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 }
 add_action( 'wp_enqueue_scripts', 'mapify_scripts' );
