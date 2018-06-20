@@ -33,7 +33,39 @@
           <p class="phonox-quote">"The data sharing Mapify offers is incredibly</br>useful when createing and marketing events."</br><span class="phonox-brixton">Phonox, Brixton</span></p>
    </div>
 
-
       </section>
+
+    <section class="how-it-works">
+
+        <h1 class="how-it-works-title">How it works</h1>
+
+
+    <div class="how-works-banner">
+        <img class="read-icon" src="<?php echo get_template_directory_uri(); ?>/icons/read-icon.png"/>
+        <img class="search-icon" src="<?php echo get_template_directory_uri(); ?>/icons/Search.png"/>
+        <img class="sign-up-icon" src="<?php echo get_template_directory_uri(); ?>/icons/sign-up.png"/>
+        <img class="insights-icon" src="<?php echo get_template_directory_uri(); ?>/icons/insights-icon.png"/>
+   </div>
+
+
+   <div class="icons-title">
+        <h2 class="icon-title1">Read</h2>
+        <h2 class="icon-title2">Search</h2>
+        <h2 class="icon-title3">Sign Up</h2>
+        <h2 class="icon-title3">Insights</h2>
+   </div>
+
+    <div class="icon-content">
+         <p class="icon-content">Read and learn more about Mapify and how it can help you</p>
+         <p class="icon-content">Search any area or community around the UK to get in depth analytics of that area</p>
+         <p class="icon-content">Read and learn more about Mapify and how it can help you</p>
+         <p class="icon-content">Read and learn more about Mapify and how it can help you</p>
+    </div>
+
+
+
+
+
+  </section>
 
       <?php get_footer(); ?>
