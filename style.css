@@ -647,6 +647,18 @@ object {
       display: none; } }
 
 /* faq */
+.faq-content-area .contactUsSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.faq-content-area h4 {
+  text-align: center; }
+
 .faq-content-area .questionCategories {
   background-color: #fcfcfc; }
 
@@ -709,7 +721,42 @@ object {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column; }
+  .social-media {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .social-media img {
+      width: 50px;
+      height: 50px; }
+  .contactUs {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .contactUs img {
+      max-height: 60px;
+      max-width: 50px; }
+    .contactUs input {
+      width: 90%; }
+    .contactUs textarea {
+      width: 90%; }
+    .contactUs .wpcf7-submit {
+      width: 50%; }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 .home-hero {
   height: 150vh;
