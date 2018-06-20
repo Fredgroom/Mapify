@@ -82,6 +82,28 @@ function mapify_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mapify_scripts' );
 
+/**
+ * Contact form 7 password fields
+ */
+function cfp($atts, $content = null) {
+    extract(shortcode_atts(array( "id" => "", "title" => "", "pwd" => "" ), $atts));
+
+    if(empty($id) || empty($title)) return "";
+
+$cf7 = do_shortcode('[contact-form-7 id="'. $id .'" title="' . $title . '"]');
+
+
+    $pwd = explode(',', $pwd);
+    foreach($pwd as $p) {
+        $p = trim($p);
+
+        $cf7 = preg_replace('/<input type="text" name="' . $p . '"/usi', '<input type="password" name="' . $p . '"', $cf7);
+    }
+
+    return $cf7;
+}
+add_shortcode('cfp', 'cfp');
+add_shortcode('cfp', 'cfp');
 
 /**
  * Custom functions that act independently of the theme templates.

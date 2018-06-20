@@ -10,10 +10,20 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+            <div>
+                <div class="redCircle"></div>
+                <div class="greyCircle"></div>
+                <div class="greyCircle"></div>
+            </div>
+            <div>
+                <h1>Details</h1>
+                <h1 class="greyText">Verify</h1>
+                <h1 class="greyText">Complete</h1>
+            </div>
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+            <section class="signUp">
+                <?php echo do_shortcode( '[cfp id="54" title="Sign Up" pwd="password"]' ); ?>
+                </section>
 
 			<?php endwhile; // End of the loop. ?>
 
@@ -21,3 +31,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+ 

@@ -758,6 +758,54 @@ object {
         -ms-flex-pack: center;
             justify-content: center; } }
 
+.signUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .signUp form {
+    width: 75vw; }
+  .signUp label {
+    width: 100%; }
+    .signUp label input {
+      width: 100%;
+      border: none;
+      background-color: #e9ebec;
+      color: #a0a9b1; }
+  .signUp .wpcf7-list-item-label {
+    font-size: 10px; }
+  .signUp .wpcf7-list-item {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    margin: 0;
+    margin-bottom: 1em; }
+    .signUp .wpcf7-list-item input {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-self: center; }
+
+@media only screen and (min-width: 600px) {
+  .signUp form {
+    width: 80vw;
+    padding: 15px; }
+    .signUp form input {
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .signUp .doubleLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .signUp .doubleLine p {
+      width: 45%; } }
+
 .home-hero {
   height: 150vh;
   width: 100vw; }
