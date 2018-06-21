@@ -124,3 +124,6 @@ require get_template_directory() . '/inc/metaboxes.php';
  * Custom WP API modifications.
  */
 require get_template_directory() . '/inc/api.php';
+
+// remove extra p tags from contact form 7
+add_filter('wpcf7_autop_or_not', '__return_false');
