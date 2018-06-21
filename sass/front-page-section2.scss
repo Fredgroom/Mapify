@@ -119,7 +119,7 @@
 
 .how-it-works {
   background-color: #FCFCFC;
-  height:120vh;
+  height:150vh;
   width:100vw;
 }
 
@@ -131,14 +131,22 @@ font-size: 40px;
 padding-top: 60px;
 }
 
+.icon-title {
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
 // styling the paragraph for each icon
 .paragraph-text {
   font-size: 25px;
   font-weight: lighter;
   text-align: center;
   padding-top: 30px;
-  margin-
 }
+
+// styling the buttons of each icon\
+
+
 
 @media all and (min-width: 320px)  {
    .how-to-icons {

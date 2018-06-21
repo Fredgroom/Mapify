@@ -1012,13 +1012,17 @@ object {
 
 .how-it-works {
   background-color: #FCFCFC;
-  height: 120vh;
+  height: 150vh;
   width: 100vw; }
 
 .carousel-inner {
   text-align: center;
   font-size: 40px;
   padding-top: 60px; }
+
+.icon-title {
+  padding-right: 50px;
+  padding-bottom: 30px; }
 
 .paragraph-text {
   font-size: 25px;
