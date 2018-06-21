@@ -195,8 +195,14 @@ form {
   form {
     width: 75vw;
   }
+  .wpcf7-select {
+    background-color: rgb(233,235,236);
+    color: rgb(160,169,177);
+    border: none;
+  }
   label {
     width: 100%;
+    padding: 50px;
     input {
       width: 100%;
       border: none;
@@ -210,14 +216,11 @@ form {
   .wpcf7-list-item {
     display: grid;
     grid-template-columns: 10% 90%;
-    margin: 0;
-    margin-bottom: 1em;
     input {
       display: flex;
       justify-self: center;
     }
-}
-  
+  }
 }
 
 
