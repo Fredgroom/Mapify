@@ -189,6 +189,67 @@ form {
 }
 
 // sign-up
+.signUp-content-area{
+  .headerSignUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .ajax-loader{
+    display: none;
+  }
+  .signUpIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    .greyEnvelope{
+      background-image: url('../../icons/Mail.png');
+    }
+    .redTick{
+      width: 80px;
+      height: 80px;
+    }
+    .redCircle{
+      background-color: white;
+      border-color: rgb(255, 51, 102);
+      border-style: solid;
+      border-radius: 50%;
+      border-width: 5px;
+      height: 80px;
+      width: 80px;
+      
+    }
+    .greyCircle{
+      border-radius: 50%;
+      border-width: 5px;
+      height: 60px;
+      width: 60px;
+      border: 10px;
+      background: rgb(233,235,236);
+      
+    }
+    .largetick{
+      margin: auto;
+    }
+      hr {
+        align-self: center;
+        width: 20%;
+        margin: 0;
+      }
+  }
+ 
+  .signUpTitles{
+    display: flex;
+    h1 {
+      font-size: 20px;
+      margin: auto;
+    } 
+  }
+}
+
 .signUp {
   display: flex;
   justify-content: center;
@@ -202,7 +263,7 @@ form {
   }
   label {
     width: 100%;
-    padding: 50px;
+    padding: 15px 10px;
     input {
       width: 100%;
       border: none;
@@ -211,6 +272,8 @@ form {
     }
   }
   .wpcf7-list-item-label {
+    display: flex;
+    align-items: center;
     font-size: 10px;
   }
   .wpcf7-list-item {
@@ -219,21 +282,95 @@ form {
     input {
       display: flex;
       justify-self: center;
+      align-self: center;
+      color: rgb(255, 51, 102);
+      border-color: black;
+      margin: 0;
+      font-size: 30px;
     }
+    input:checked {
+      background-color: rgb(255, 51, 102);
+      color: white;
+    }
+  }
+  .wpcf7-submit {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    margin: 10px auto;
+    background-color: rgb(255, 51, 102);
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    width: 30%;
+    text-shadow: none;
+    box-shadow: none;
+    padding: 20px 0;
+      input{
+      text-align: center;
+     }
+  }
+  .wpcf7-submit:hover {
+    background-color: rgb(255, 51, 102);
+    box-shadow: none;
   }
 }
 
+.email-sent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  .mail {
+    display: flex;
+    align-self: center;
+    width: 50%;
+  }
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
 
+.allDone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  img {
+    width: 250px;
+    height: 250px;
+  }
+}
 
   @media only screen and (min-width: 600px) {
+    .signUpBackground {
+      background-image: url('../../images/signup.png');
+      display: flex;
+      justify-content: center;
+      .signUpContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        padding-top: 25px;
+        margin: 75px auto;
+        background-color: white;
+        width: 60vw;
+        }
+    }
+   
     .signUp {
       form {
-        width: 80vw;
+        display: flex;
+        justify-items: center;
+        width: 100%;
         padding: 15px;
-        input {
-          padding-left: 15px;
-          padding-top: 10px;
-          padding-bottom: 10px;
+        label {
+          input {
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
         }
       }
       .doubleLine {
@@ -243,5 +380,42 @@ form {
           width: 45%;
         }
       }
+      .wpcf7-select {
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .wpcf7-submit {
+        margin: 10px auto;
+        background-color: rgb(255, 51, 102);
+        border-radius: 8px;
+        font-size: 20px;
+        color: white;
+        width: 30%;
+        text-shadow: none;
+        box-shadow: none;
+        padding: 20px 0;
+      }
   }
   }
+  @media only screen and (min-width: 1000px) {
+    .signUpBackground{
+      .signUpContainer {
+        width: 50vw;
+      }
+    }
+  }
+  
+.signUpBackground{
+  .signUpContainer1 {
+    display: none;
+  }
+  
+  .signUpContainer2 {
+    display: none;
+  }
+  .signUpContainer3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
