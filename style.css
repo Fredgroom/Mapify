@@ -1027,6 +1027,7 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 50px;
+  font-family: 'Lato', sans-serif;
   color: #ffffff;
   padding-top: 17%;
   text-shadow: 2px 2px #38312C; }
@@ -1039,6 +1040,7 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 50px;
+  font-family: 'Lato', sans-serif;
   color: #ffffff;
   text-shadow: 2px 2px #38312C; }
 
@@ -1051,6 +1053,7 @@ object {
           justify-content: center;
   font-size: 30px;
   font-weight: lighter;
+  font-family: 'Lato', sans-serif;
   color: #ffffff;
   text-shadow: 1px 1px #38312C;
   padding-top: 20px; }
@@ -1078,13 +1081,15 @@ object {
   padding-top: 200px;
   padding-left: 25px;
   font-size: 30px;
+  font-family: 'Lato', sans-serif;
   color: #ffffff;
   text-shadow: 1px 1px #38312C; }
 
 .phonox-info {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex; }
+  display: inline-flex;
+  padding-left: 5%; }
 
 .phonox-image {
   height: 115px;
@@ -1119,6 +1124,11 @@ object {
     position: absolute;
     right: 09%;
     top: 80%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #primary-menu, #primary-menu a, #secondary-menu, #secondary-menu a, ol, ul {
+    font-size: 20px;
+    padding-right: 30px; } }
 
 .carousel-showmanymoveone .carousel-control {
   width: 4%;
@@ -1217,7 +1227,8 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 12%;
-  padding-bottom: 3%; }
+  padding-bottom: 3%;
+  font-family: 'Lato', sans-serif; }
 
 .how-it-works {
   background-color: #FCFCFC;
@@ -1237,16 +1248,67 @@ object {
   font-size: 25px;
   font-weight: lighter;
   text-align: center;
-  padding-top: 30px; }
+  padding-top: 30px;
+  font-family: 'Lato', sans-serif; }
 
-@media all and (min-width: 320px) {
+button, input[type=button], input[type=reset], input[type=submit] {
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: .6rem 1rem .4rem; }
+
+.here-button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 2px #1ED8B3 solid;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin-top: 50px;
+  font-family: 'Lato', sans-serif !important; }
+
+.search-button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 2px #1ED8B3 solid;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none; }
+
+.signup-button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 2px #1ED8B3 solid;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none; }
+
+.insights-button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 2px #1ED8B3 solid;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin-top: 85px; }
+
+@media all and (min-width: 320px) and (max-width: 991px) {
   .how-to-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .img-responsive {
+    padding-left: 18%; } }
 
 @media all and (min-width: 1600px) {
   .carousel-main-container {
@@ -1270,3 +1332,145 @@ object {
     margin-left: 20px; }
   .glyphicon-menu-left {
     right: 28px; } }
+
+.our-projects {
+  height: 150vh;
+  width: 100vw; }
+
+.projects-h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Lato', sans-serif; }
+
+.impact {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter; }
+
+.our-projects {
+  height: 150vh;
+  width: 100vw; }
+
+.projects-h1 {
+  padding-top: 110px; }
+
+.impact {
+  color: #A4ADB5; }
+
+.project-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px; }
+
+.project-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 35px; }
+
+.devonshire-club {
+  margin-left: 110px; }
+
+.church-street {
+  margin-right: 15px; }
+
+.upper-clapton {
+  margin-right: 120px; }
+
+.project-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px; }
+
+.clapton-text {
+  margin-right: 80px; }
+
+.devonshire-text {
+  margin-left: 80px;
+  margin-right: 15px; }
+
+.project-buttons {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.button1, .button2, .button3 {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 230px;
+  border: #1ED8B3 solid 2px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #1ED8B3; }
+
+.button1 {
+  margin-left: 100px; }
+
+.button3 {
+  margin-right: 100px; }
+
+.see-all {
+  text-align: right;
+  padding-right: 10%;
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  color: #FF3366;
+  font-weight: bold; }
+
+.why-mapify {
+  height: 150vh;
+  width: 100vw; }
+
+.mapify-title {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Lato', sans-serif; }
+
+.where-impact {
+  text-align: center;
+  color: #A4ADB5;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 100px; }
+
+.why-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 40px; }

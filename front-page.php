@@ -34,7 +34,11 @@
    </div>
 
       </section>
+      <!-- end of section  -->
+      <!-- ------------------------ -->
 
+
+<!-- second section starts -->
     <section class="how-it-works">
 
         <h1 class="how-it-works-title">How it works</h1>
@@ -67,16 +71,91 @@
     </div>
   </div>
 
-
+<!-- section ends  -->
   </section>
+<!-- ------------------------ -->
+<!-- ------------------------ -->
 
 
+<!-- third section starts  -->
       <section class="video-iframe">
 
   <iframe width="100%" height="720" src="https://www.youtube.com/embed/nfQHF87vY0s" frameborder="0" allowfullscreen></iframe>
 
-
+<!-- end of section  -->
       </section>
+
+      <!-- ------------------------
+      ------------------------ -->
+
+
+
+<!-- new section four- our projects  -->
+<section class="our-projects">
+
+  <h1 class="projects-h1">Our Projects</h1>
+  <h2 class="impact">Take a look where we have made an impact</h2>
+  <h2 class="see-all">See all</h2>
+
+<!--
+still need to get the image icons from jason  -->
+
+
+         <div class="project-icons">
+<img class="devonshire-icon" src="<?php echo get_template_directory_uri(); ?>/icons/devonshire-icon.png"></a>
+<img class="church-icon" src="<?php echo get_template_directory_uri(); ?>/icons/clapton-icon.png"></a>
+<img class="clapton-icon" src="<?php echo get_template_directory_uri(); ?>/icons/church-icon.png"></a>
+         </div>
+
+
+          <div class="project-title">
+<h1 class="devonshire-club">Devonshire Club</h1>
+<h1 class="church-street">Church Street</h1>
+<h1 class="upper-clapton">Upper Clapton</h1>
+          </div>
+
+
+          <div class="project-text">
+<p class="devonshire-text">just some spectacular that has been printed.</br> more text has been text tdjwd wqjdkqwdasdas</br> dsadassf  djasd  dkaf fafkfas</p>
+<p class="church-text">just some spectacular that has been printed.</br> more text has been text tdjwd wqjdkqwdasdas</br> dsadassf  djasd  dkaf fafkfas</p>
+<p class="clapton-text">just some spectacular that hasprinted.</br> more text has bewqjdkqwdasdas</br> dsadassf  djasd  dkaf fafkfas</p>
+          </div>
+
+
+          <div class="project-buttons">
+<button class="button1">Read more</button>
+<button class="button2">Read more</button>
+<button class="button3">Read more</button>
+          </div>
+
+ <!-- section ends  -->
+    </section>
+
+
+<!-- new section 5 why mapify  -->
+<section class="why-mapify">
+
+    <h1 class="mapify-title">Why &nbsp;  Mapify</h1>
+    <h2 class="where-impact">Take a look where we have made an impact</h2>
+
+    <div class="why-icons">
+<img class="3-people-icon" src="<?php echo get_template_directory_uri(); ?>/icons/3-people-icon.png"></a>
+<img class="glassh-and-shop" src="<?php echo get_template_directory_uri(); ?>/icons/Glassh-and-shop.png"></a>
+<img class="grow-icon" src="<?php echo get_template_directory_uri(); ?>/icons/Hands.png"></a>
+    </div>
+
+    <div class="icons-title">
+<h1 class="">
+
+
+
+
+
+
+
+
+</section>
+<!-- end of section  -->
 
 
   <script>
