@@ -127,3 +127,16 @@ require get_template_directory() . '/inc/api.php';
 
 // remove extra p tags from contact form 7
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+flush_rewrite_rules( false );
+
+function get_all_town_posts( $query ) {
+	if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'towns' ) ) {
+	  $query->set( array(
+			  'posts_per_page' => '9',
+			  'orderby' => 'name',
+			  'order' => 'ASC'
+		  ));
+	}
+  }
+  add_action( 'pre_get_posts', 'get_all_town_posts' );
