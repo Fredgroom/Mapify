@@ -20,6 +20,9 @@
         display: flex;
         justify-content: center;
       }
+      a {
+        color: $mapify-grey-text;
+      }
   }
   .desktopFooterMenu {
     display: none;

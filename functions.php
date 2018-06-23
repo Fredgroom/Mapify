@@ -130,13 +130,9 @@ add_filter('wpcf7_autop_or_not', '__return_false');
 
 flush_rewrite_rules( false );
 
-function get_all_town_posts( $query ) {
-	if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'towns' ) ) {
-	  $query->set( array(
-			  'posts_per_page' => '9',
-			  'orderby' => 'name',
-			  'order' => 'ASC'
-		  ));
+function set_posts_project_archive( $query ) {
+	if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'projects' ) ) {
+	  $query->set( 'posts_per_page', '9' );
 	}
   }
-  add_action( 'pre_get_posts', 'get_all_town_posts' );
+  add_action( 'pre_get_posts', 'set_posts_project_archive' );
