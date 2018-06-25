@@ -1,7 +1,7 @@
 <?php
 /*
-Template Name: archive-projects
-The template for displaying project pages.
+ * Template Name: archive-projects
+ * The template for displaying project pages.
  *
  * @package mapify_theme
  */
