@@ -10,7 +10,7 @@
 <!-- <?php // get_template_part( 'template-parts/content' ); ?> -->
 
 
-      <section class="home-hero" style="background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4) 0%,rgba(0, 0, 0, 0.4) 100%), #969696 url('<?php echo get_template_directory_uri(); ?>/images/main-bg.jpg'); background-size: cover, cover;">
+      <section id="home-section" class="home-hero" style="background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4) 0%,rgba(0, 0, 0, 0.4) 100%), #969696 url('<?php echo get_template_directory_uri(); ?>/images/main-bg.jpg'); background-size: cover, cover;">
 
       <h1 class="connecting">CONNECTING COMMUNITIES THROUGH</h1>
       <h2 class="communities">HUMAN-CENTERED DATA</h2>
@@ -39,7 +39,7 @@
 
 
 <!-- second section starts -->
-    <section class="how-it-works">
+    <section id="how-it-works-section" class="how-it-works">
 
         <h1 class="how-it-works-title">How it works</h1>
 
@@ -145,7 +145,16 @@ still need to get the image icons from jason  -->
     </div>
 
     <div class="icons-title">
-<h1 class="">
+<h1 class="know">KNOW</h1>
+<h1 class="show">SHOW</h1>
+<h1 class="grow">GROW</h1>
+    </div>
+
+<div class="your-community">
+    <h2 class="Your community">
+    <h2 class="Your community">
+    <h2 class="Your community">
+</div>
 
 
 
@@ -157,6 +166,19 @@ still need to get the image icons from jason  -->
 </section>
 <!-- end of section  -->
 
+<script>
+var top1 = jQuery('#home-section').offset().top;
+var top2 = jQuery('#how-it-works-section').offset().top - 162;
+jQuery(document).scroll(function() {
+  var scrollPos = jQuery(document).scrollTop();
+  if (scrollPos >= top1 && scrollPos < top2) {
+    // need to display reverse header
+    jQuery('#masthead').addClass( "reverse-header" );
+  } else if (scrollPos >= top2) {
+    jQuery('#masthead').removeClass( "reverse-header" );
+  }
+});
+</script>
 
   <script>
       (function(){
