@@ -1,7 +1,7 @@
 <?php
 /*
-Template Name: archive-projects
-The template for displaying project pages.
+ * Template Name: archive-projects
+ * The template for displaying project pages.
  *
  * @package mapify_theme
  */
@@ -9,7 +9,7 @@ The template for displaying project pages.
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="projects-site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -17,20 +17,27 @@ get_header(); ?>
 				
 					<h1>Our Projects</h1>
 					<p>Take a look at where we've made an impact.</p>
-
+					
 
 			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
 			
+			<div class="article-container">
+			<?php /* Start the Loop */ ?>
+
+			
+			
+			<?php while ( have_posts() ) : the_post(); ?>
+				
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
+					<section class="project-container">
 					<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'large' ); ?>
+
+				
+
 					<?php endif; ?>
 						<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-					</header><!-- .entry-header -->
+					</section><!-- .entry-header -->
 
 					<div class="entry-content">
 						<?php the_excerpt(); ?>
@@ -39,14 +46,12 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
-
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
