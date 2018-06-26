@@ -411,14 +411,35 @@ form {
   
 .signUpBackground{
   .signUpContainer1 {
-    display: none;
+    display: flex;
   }
   
   .signUpContainer2 {
-    display: none;
+    display: flex;
   }
   .signUpContainer3 {
     display: flex;
     flex-direction: column;
   }
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  .signInBackground {
+    background-image: url('../../images/signup.png');
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+    .formBackground {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-self: center;
+      background-color: white;
+      padding: 50px 50px;
+    }
+  }
+  
 }

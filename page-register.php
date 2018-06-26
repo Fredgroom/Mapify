@@ -13,7 +13,7 @@ get_header(); ?>
             
 			<?php while ( have_posts() ) : the_post(); ?>
            <section class="signUpBackground">
-               <div class="signUpContainer signUpContainer1">
+               <div id="step1" class="signUpContainer signUpContainer1">
                 <div class="headerSignUp">
                     
                          
@@ -37,7 +37,7 @@ get_header(); ?>
                 </div>
                 
 
-                <div class="signUpContainer signUpContainer2">
+                <div id="step2" class="signUpContainer signUpContainer2">
                 <div class="headerSignUp">
                     
                          
@@ -58,11 +58,11 @@ get_header(); ?>
                     <section class="email-sent">
                         <img class="mail" src="<?php echo get_stylesheet_directory_uri(); ?>/icons/emailicon.png" alt="">
                         <h2>Verification email sent!</h2>
-                        <h3>Veryify your email to continue.</h3>
+                        <h3>Verify your email to continue.</h3>
                     </section>
 
                     <section class="signUp">
-                        <input type="submit" value="Done" class="wpcf7-form-control wpcf7-submit"></input>
+                        <input type="submit" value="Done" id ="verifiedEmail" class="wpcf7-form-control wpcf7-submit "></input>
                     </section>
                     </div> 
                
@@ -70,7 +70,7 @@ get_header(); ?>
 
 
 
-                <div class="signUpContainer signUpContainer3">
+                <div id="step3" class="signUpContainer signUpContainer3">
                 <div class="headerSignUp">
                     
                          
@@ -93,7 +93,7 @@ get_header(); ?>
                     <h2>All Done!</h2>
                 </section>
                 <section class="signUp">
-                    <input type="submit" value="Done" class="wpcf7-form-control wpcf7-submit"></input>
+                    <button type="submit" value="Done" id="allDone" class="wpcf7-form-control wpcf7-submit" href="<?php echo home_url() ?>">Sign Up</button>
                 </section>
                 </div>
                 
@@ -105,3 +105,22 @@ get_header(); ?>
 
 <?php get_footer(); ?>
  
+
+<script>
+
+ document.getElementById("step1").style.display = "flex";
+ document.getElementById('step2').style.display = "none";
+ document.getElementById('step3').style.display = "none";
+
+var wpcf7Elm = document.querySelector( '.wpcf7' );
+    wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
+    document.getElementById("step1").style.display = "none";
+    document.getElementById('step2').style.display = "flex";
+ }, false );
+ 
+document.getElementById("verifiedEmail").addEventListener("click", function(){
+    document.getElementById('step2').style.display = "none";
+    document.getElementById('step3').style.display = "flex";
+});
+
+</script>
