@@ -1028,10 +1028,14 @@ object {
     width: 50vw; } }
 
 .signUpBackground .signUpContainer1 {
-  display: none; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .signUpBackground .signUpContainer2 {
-  display: none; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .signUpBackground .signUpContainer3 {
   display: -webkit-box;
@@ -1041,6 +1045,32 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+@media only screen and (min-width: 600px) {
+  .signInBackground {
+    background-image: url("../../images/signup.png");
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 150px; }
+    .signInBackground .formBackground {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      justify-self: center;
+      background-color: white;
+      padding: 50px 50px; } }
 
 .home-hero {
   height: 150vh;
@@ -1474,7 +1504,7 @@ button, input[type=button], input[type=reset], input[type=submit] {
   font-weight: bold; }
 
 .why-mapify {
-  height: 150vh;
+  height: 135vh;
   width: 100vw; }
 
 .mapify-title {
@@ -1503,6 +1533,9 @@ button, input[type=button], input[type=reset], input[type=submit] {
   padding-bottom: 40px;
   background-color: #FBFBFB; }
 
+.3-people {
+  padding-left: 20%; }
+
 .icons-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1524,8 +1557,91 @@ button, input[type=button], input[type=reset], input[type=submit] {
           justify-content: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 15px;
+  font-size: 25px;
   color: #9EA9B2; }
+
+.padding-change {
+  padding-right: 130px;
+  padding-left: 0px; }
+
+.why-mapify-text {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 15px;
+  color: black;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.our-impact {
+  height: 135vh;
+  width: 100vw; }
+
+.our-impact-title {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Lato', sans-serif; }
+
+.impact-subheading {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  color: #9EA9B2; }
+
+.impact-images {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.impact-title {
+  padding-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 25px;
+  color: #FF3366; }
+
+.impact-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 25px;
+  color: #9EA9B2; }
+
+.impact-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .partners-container {
   padding-top: 200px;
