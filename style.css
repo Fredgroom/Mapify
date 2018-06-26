@@ -1028,10 +1028,14 @@ object {
     width: 50vw; } }
 
 .signUpBackground .signUpContainer1 {
-  display: none; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .signUpBackground .signUpContainer2 {
-  display: none; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .signUpBackground .signUpContainer3 {
   display: -webkit-box;
@@ -1041,6 +1045,32 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+@media only screen and (min-width: 600px) {
+  .signInBackground {
+    background-image: url("../../images/signup.png");
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 150px; }
+    .signInBackground .formBackground {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      justify-self: center;
+      background-color: white;
+      padding: 50px 50px; } }
 
 .home-hero {
   height: 150vh;
