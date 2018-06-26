@@ -151,12 +151,51 @@ still need to get the image icons from jason  -->
     </div>
 
 <div class="your-community">
-    <h2 class="Your community">
-    <h2 class="Your community">
-    <h2 class="Your community">
+    <h2 class="your-community">Your community</h2>
+    <h2 class="your-community">Your community</h2>
+    <h2 class="your-community">Your community</h2>
 </div>
 
+<div class="why-mapify-text">
+    <p class="mapify-text">Our human-centered data priortises transparency,</br> allowing users to truly understand, interact, </br>and share with their community more insightfully</p>
+    <p class="mapify-text">Whether you give data or collect data,</br> Mapify can help you. Using our paltform, </br>it’s never been easier to put your</br> community on the map</p>
+    <p class="mapify-text">We’re a consultancy providing data analytics</br> on social and environmental matters.</br> Giving everyone information, as well as a voice</br> to make an impact on the direction of your community.</p>
+</div>
 
+</section>
+<!-- end of section  -->
+
+<!-- new section  -->
+<section class="our-impact">
+
+    <h1 class="our-impact-title">Our Impact</h1>
+    <h2 class="impact-subheading">See the impact we are making.</h2>
+
+ <div class="impact-images">
+    <img class="active-users" src="<?php echo get_template_directory_uri(); ?>/icons/3-users.png"></a>
+      <h1 class="10938">10,938</h1>
+      <h2 class="active-text">Active users</h2>
+  </div>
+
+
+<!--
+    <img class="clipboard" src="<?php echo get_template_directory_uri(); ?>/icons/clipboard.png"></a>
+    <img class="connections-made" src="<?php echo get_template_directory_uri(); ?>/icons/Icon.png"></a>
+ </div>
+
+
+<div class="impact-title">
+
+  <h1 class="10938">10,938</h1>
+  <h1 class="391">391</h1>
+  <h1 class="21713">21,713</h1>
+</div>
+
+<div class="impact-text">
+    <h2 class="active-text">Active users</h2>
+    <h2 class="projects-helped">Projects we've helped</h2>
+    <h2 class="connections-text">Connections made</h2>
+</div> -->
 
 
 
@@ -164,7 +203,6 @@ still need to get the image icons from jason  -->
 
 
 </section>
-<!-- end of section  -->
 
 <script>
 var top1 = jQuery('#home-section').offset().top;

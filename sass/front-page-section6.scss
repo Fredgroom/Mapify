@@ -1,0 +1,56 @@
+.our-impact {
+    height:135vh;
+    width:100vw;
+}
+
+.our-impact-title {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+}
+
+.impact-subheading {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  color: #9EA9B2;
+}
+
+.impact-images {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.impact-title {
+padding-top: 90px;
+display: flex;
+justify-content: center;
+justify-content: space-around;
+font-size: 25px;
+color: #FF3366;
+}
+
+.impact-text {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  font-size: 25px;
+  color: #9EA9B2;
+}
+
+//
+// .active-text, .projects-helped, .connections-text {
+// font-size: 22px;
+// }
+//
+// .connections-text {
+// padding-right: 9px;
+// }
+
+.impact-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
