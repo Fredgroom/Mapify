@@ -1,48 +1,44 @@
 <?php
-/**
- * template name: archive-partners
- * The template for displaying archive pages.
+/*
+ * Template Name: archive-Partners
+ * The template for displaying project pages.
  *
  * @package mapify_theme
  */
 
-get_header(); ?>
+ get_header(); ?>
+ <div class="partners-container">
+ <h1>Community Partners</h1>
+<p>Hear how we empower our communities</p>
 
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
+<?php
+if ( get_query_var('paged') ) $paged = get_query_var('paged');
+if ( get_query_var('page') ) $paged = get_query_var('page');
 
-	<?php if ( have_posts() ) : ?>
+$query = new WP_Query( array( 'post_type' => 'mapify_partners', 'paged' => $paged ) ); ?>
+<div class="article-containers">
+<?php if ( $query->have_posts() ) : ?>
+	<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+		<div class="partner-article">
+			<h2 class="title"><?php the_title(); ?><hr></h2>
+					<?php $LN1 = CFS()->get( 'link_name' ); ?>	
+					<?php $LU1 = CFS()->get( 'link_url' ); ?>
+					<?php $VU1 = CFS()->get( 'video_url' ); ?>
 
-		<header class="page-header">
-			<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-			?>
-		</header><!-- .page-header -->
+			<p class="grey-text"><?php the_content(); ?></p>
+			<a href="<?php echo $LU1 ?>"><?php echo $LN1; ?></a>
+			<iframe width="560" height="315" src="<?php echo $VU1?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="entry-header">
-					<?php get_the_post_thumbnail(); ?>
-					<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-				</header><!-- .entry-header -->
-
-				<div class="entry-content">
-					<?php the_excerpt(); ?>
-				</div><!-- .entry-content -->
-			</article><!-- #post-## -->
-
-		<?php endwhile; ?>
+		</div>
+	<?php endwhile; wp_reset_postdata(); ?>
 
 
 	<?php else : ?>
 
-		<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 	<?php endif; ?>
+	</div>
+</div>
+<?php get_footer() ?>
 
-	</main><!-- #main -->
-</div><!-- #primary -->
 
-<?php get_footer(); ?>

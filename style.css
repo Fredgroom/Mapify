@@ -419,13 +419,21 @@ a {
 
 /* Menus */
 .site-header {
-  background-color: white; }
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #8A959E;
+  z-index: 1;
+  border-bottom: 1.4px solid #D4D4D4;
+  -webkit-box-shadow: 0px 1px 1px #D4D4D4;
+          box-shadow: 0px 1px 1px #D4D4D4; }
 
 .site-header.reverse-header {
   background: transparent;
-  position: fixed;
-  top: 0;
-  width: 100%; }
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .navbar {
   position: relative;
@@ -435,7 +443,7 @@ a {
   height: 80px;
   width: 100%;
   padding-top: 80px;
-  padding-bottom: 40px; }
+  padding-bottom: 60px; }
 
 .menu-primary-menu-container {
   -webkit-box-flex: 1;
@@ -454,7 +462,11 @@ a {
 #primary-menu a {
   padding-right: 80px;
   font-family: 'Lato', sans-serif;
-  font-size: 20px;
+  font-size: 20px; }
+  #primary-menu a:visited {
+    color: #8F9AA2; }
+
+.reverse-header #primary-menu a {
   color: #ffffff;
   text-shadow: 2px 2px #38312C; }
 
@@ -470,12 +482,22 @@ a {
 #secondary-menu a {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
+  padding-right: 80px; }
+  #secondary-menu a:visited {
+    color: #8F9AA2; }
+
+.reverse-header #secondary-menu a {
   color: #ffffff;
-  padding-right: 80px;
   text-shadow: 2px 2px #38312C; }
 
-#menu-item-40 a {
-  color: #FF3366; }
+#menu-item-40 a:visited {
+  color: #FF527E; }
+
+.reverse-header #menu-item-40 a {
+  color: #FF527E;
+  text-shadow: 2px 2px #38312C; }
+  .reverse-header #menu-item-40 a:visited {
+    color: #FF527E; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -538,6 +560,9 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+main {
+  padding-top: 125px; }
+
 .sticky {
   display: block; }
 
@@ -1228,8 +1253,8 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 12%;
-  padding-bottom: 3%;
+  margin-top: 0;
+  padding-top: 180px;
   font-family: 'Lato', sans-serif; }
 
 .how-it-works {
@@ -1475,7 +1500,79 @@ button, input[type=button], input[type=reset], input[type=submit] {
           justify-content: space-between;
   margin-left: 100px;
   margin-right: 100px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  background-color: #FBFBFB; }
+
+.icons-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 25px;
+  color: #FF3366; }
+
+.your-community {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 15px;
+  color: #9EA9B2; }
+
+.partners-container {
+  padding-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .partners-container .article-containers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .partners-container .article-containers .partner-article {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      border: solid black 1px;
+      margin: 10px;
+      padding: 10px; }
+      .partners-container .article-containers .partner-article h2 {
+        text-align: center; }
+
+@media only screen and (min-width: 600px) {
+  .partners-container .article-containers {
+    display: grid;
+    grid-template-columns: 50% 50%; } }
+
+@media only screen and (min-width: 1000px) {
+  .partners-container .article-containers {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; } }
 
 /*--------------------------------------------------------------
 #Project Page
