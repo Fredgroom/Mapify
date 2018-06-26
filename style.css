@@ -560,6 +560,9 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+main {
+  padding-top: 125px; }
+
 .sticky {
   display: block; }
 
@@ -1523,6 +1526,53 @@ button, input[type=button], input[type=reset], input[type=submit] {
       justify-content: space-around;
   font-size: 15px;
   color: #9EA9B2; }
+
+.partners-container {
+  padding-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .partners-container .article-containers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .partners-container .article-containers .partner-article {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      border: solid black 1px;
+      margin: 10px;
+      padding: 10px; }
+      .partners-container .article-containers .partner-article h2 {
+        text-align: center; }
+
+@media only screen and (min-width: 600px) {
+  .partners-container .article-containers {
+    display: grid;
+    grid-template-columns: 50% 50%; } }
+
+@media only screen and (min-width: 1000px) {
+  .partners-container .article-containers {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; } }
 
 /*--------------------------------------------------------------
 #Project Page
