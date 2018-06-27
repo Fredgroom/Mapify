@@ -13,13 +13,13 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="faq-page-header">
 				<h1>FAQs</h1>
 			</header><!-- .page-header -->
 
 			<section class="questionCategories">
 				<h2>Question Categories</h2>
-				<img src="<?php echo get_template_directory_uri();?>/icons/search-icon.png" />
+				<img class="searchIcon" src="<?php echo get_template_directory_uri();?>/icons/search-icon.png" />
 				<div class="accordion" id="accordionExample">
 					<?php /* Start the Loop */ ?>
 					<?php $counter = 0;?>
@@ -106,6 +106,7 @@ get_header(); ?>
 
 		<h2>Get in touch!</h2>
 		<h4>We love to help!</h4>
+		<hr class="hyphen">
 		
 
 	<Section class="contactUs">

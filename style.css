@@ -673,118 +673,6 @@ object {
     .site-info .mobileFooterMenu {
       display: none; } }
 
-/* faq */
-.faq-content-area .contactUsSocial {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.faq-content-area h4 {
-  text-align: center; }
-
-.faq-content-area .questionCategories {
-  background-color: #fcfcfc; }
-
-.faq-content-area ul {
-  margin: 0; }
-
-.faq-content-area button.btn.btn-link {
-  background-color: white;
-  width: 100%;
-  border: 0.5px solid #e7e7e7; }
-
-.faq-content-area .nav-tabs > li.active > a, .faq-content-area .nav-tabs > li.active > a:focus, .faq-content-area .nav-tabs > li.active > a:hover {
-  border: none; }
-
-.faq-content-area .nav.tab {
-  border: 0px; }
-  .faq-content-area .nav.tab li {
-    border: none; }
-    .faq-content-area .nav.tab li a {
-      border: none; }
-
-.faq-content-area .tab-container {
-  background-color: white;
-  border: 0px; }
-
-.faq-content-area .tab-content p {
-  padding: 10px;
-  text-align: center; }
-
-.faq-content-area li.active {
-  border: white; }
-
-.faq-content-area .card-header {
-  padding: 0px;
-  margin: 0px; }
-
-@media only screen and (min-width: 600px) {
-  .faq-content-area h1, .faq-content-area h2 {
-    text-align: center; }
-  .faq-content-area button {
-    width: 100%; }
-  .faq-content-area .card-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .faq-content-area .card-header h5 {
-      width: 75%;
-      background-color: white;
-      border-radius: 2px; }
-  .faq-content-area .tab-container {
-    display: grid;
-    grid-template-columns: 50% 50%; }
-  .faq-content-area .tab-container ul.nav.nav-tabs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .social-media {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-self: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    .social-media img {
-      width: 50px;
-      height: 50px; }
-  .contactUs {
-    padding-top: 60px;
-    display: grid;
-    grid-template-columns: 50% 50%; }
-    .contactUs img {
-      max-height: 60px;
-      max-width: 50px; }
-    .contactUs input {
-      width: 90%; }
-    .contactUs textarea {
-      width: 90%; }
-    .contactUs .wpcf7-submit {
-      width: 50%; }
-  form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
-
 .signUp-content-area .headerSignUp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,7 +745,7 @@ object {
       -ms-flex-pack: center;
           justify-content: center; }
   .signUp form {
-    width: 75vw; }
+    width: 85vw; }
   .signUp .wpcf7-select {
     background-color: #e9ebec;
     color: #a0a9b1;
@@ -919,6 +807,15 @@ object {
     background-color: #ff3366;
     -webkit-box-shadow: none;
             box-shadow: none; }
+
+.signUpContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .email-sent {
   display: -webkit-box;
@@ -990,7 +887,13 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     padding: 15px; }
     .signUp form label input {
@@ -1046,6 +949,32 @@ object {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.formBackground {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .formBackground img {
+    max-width: 100px; }
+  .formBackground form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
 @media only screen and (min-width: 600px) {
   .signInBackground {
     background-image: url("../../images/signup.png");
@@ -1056,7 +985,7 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 150px; }
+    padding: 50px; }
     .signInBackground .formBackground {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1070,7 +999,21 @@ object {
               align-items: center;
       justify-self: center;
       background-color: white;
-      padding: 50px 50px; } }
+      padding: 50px 50px;
+      margin: 10px 10px; }
+      .signInBackground .formBackground .sameLine {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .signInBackground .formBackground .sameLine .wpcf7-list-item {
+          margin: 0px; }
+        .signInBackground .formBackground .sameLine .wpcf7-submit {
+          width: 50%; }
+    .signInBackground img {
+      max-width: 100px; } }
 
 .home-hero {
   height: 150vh;
@@ -1772,3 +1715,111 @@ h2 {
   .projects-site-main .article-container {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%; } }
+
+.faq-content-area button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px; }
+  .faq-content-area button img {
+    width: 10px;
+    margin-right: 20px; }
+
+.faq-content-area h1, .faq-content-area h2, .faq-content-area h4 {
+  text-align: center; }
+
+.faq-content-area .questionCategories.nav-tabs > li > a {
+  border: solid; }
+
+.faq-content-area .nav-tabs > li.active > a, .faq-content-area .nav-tabs > li.active > a:focus, .faq-content-area .nav-tabs > li.active > a:hover {
+  border: none;
+  border-radius: 0px;
+  border-right: #ff3366 3px solid;
+  background-color: #eff4f6; }
+  .faq-content-area .nav-tabs > li.active > a a, .faq-content-area .nav-tabs > li.active > a:focus a, .faq-content-area .nav-tabs > li.active > a:hover a {
+    border: none; }
+
+.faq-content-area .questionCategories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .faq-content-area .questionCategories li a {
+    color: black; }
+    .faq-content-area .questionCategories li a a:hover {
+      color: black; }
+  .faq-content-area .questionCategories li a:active {
+    border: 1px solid #e7e7e7; }
+  .faq-content-area .questionCategories .tab-pane {
+    border: 0.5px #e7e7e7 solid;
+    border-top: none;
+    padding: 15px; }
+  .faq-content-area .questionCategories li:active {
+    border: black; }
+
+.faq-content-area button.btn.btn-link {
+  background-color: white;
+  width: 100vw;
+  border: 0.5px solid #e7e7e7; }
+
+.faq-content-area .tab-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px; }
+
+.faq-content-area form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .faq-content-area form input {
+    margin: 15px auto; }
+  .faq-content-area form .wpcf7-form-control {
+    width: 90vw;
+    background-color: #e9ebec;
+    border: none; }
+  .faq-content-area form textarea {
+    resize: none; }
+  .faq-content-area form .wpcf7-form-control.wpcf7-submit {
+    width: 40vw;
+    background-color: #ff3366;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    color: white; }
+
+.faq-content-area ul {
+  margin: 0; }
+  .faq-content-area ul .contact {
+    display: grid;
+    grid-template-columns: 20% 80%; }
+    .faq-content-area ul .contact img {
+      max-height: 50px;
+      max-width: 50px; }
