@@ -1,37 +1,288 @@
 
-/* faq */
+// /* faq */
+
 
 .faq-content-area {
-
-    h1, h2 {
-       text-align: center;
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    img {
+      width: 10px;
+      margin-right: 20px;
     }
-    button {
-        width: 100%;
+  }
+  h1, h2, h4 {
+    text-align: center;
+  }
+  .questionCategories.nav-tabs>li>a {
+    border: solid;
+  }
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: none;
+    border-radius: 0px;
+    border-right:  rgb(255, 51, 102) 3px solid;
+    background-color: rgb(239,244,246);
+    a {
+      border: none;
     }
-   .questionCategories {
-           background-color: rgb(252,252,252);
-       }
-
-     .card-header {
-       display: flex;
-       justify-content: center;
-       h5 {
-           width: 75%;
-           background-color: rgb(255,255,255);
-           border-radius: 2px;
-       }
+  }
+  .questionCategories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li {
+        a {
+        color: black;
+          a:hover {
+            color: black;
+          
+        }
+      }
     }
+    li a:active {
+              border: 1px solid rgb(231,231,231);
+            }
+    .nav-tabs>li>a {
+      
+    }
+    .tab-pane {
+      border: .5px rgb(231,231,231) solid;
+      border-top: none;
+      padding: 15px;
+    }
+    li:active{
+      border: black;
+    }
+  }
+  button.btn.btn-link {
+      background-color: rgb(255,255,255);
+      
+      width: 100vw;
+      border: .5px solid rgb(231,231,231);
+      }
+  .tab-container {
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+    }
+    }
+  form {
+    input {
+      margin: 15px auto;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .wpcf7-form-control {
+      width: 90vw;
+      background-color: rgb(233,235,236);
+      border: none;
+      
+    }
+    textarea {
+        resize: none;
+      }
+    .wpcf7-form-control.wpcf7-submit {
+            width: 40vw;
+            background-color: rgb(255, 51, 102);
+            box-shadow: none;
+            text-shadow: none;
+            color: white;
+          }
+  }
+  ul {
+    margin: 0;
+    .contact {
+      display: grid;
+      grid-template-columns: 20% 80%;
+      img {
+      max-height: 50px;
+      max-width: 50px;
 
-     .tab-container {
-       display: grid;
-       grid-template-columns: 50% 50%;
-     }
+    }
+    }
+    
+  }
+  }
 
-     .tab-container {
-       ul.nav.nav-tabs {
-       display: flex;
-       flex-direction: column;
-       }
-     }
-}
+
+
+
+//     h1, h2 {
+//        text-align: center;
+//     }
+//     button {
+//         width: 100%;
+//     }
+//    .questionCategories {
+//            background-color: rgb(252,252,252);
+//        }
+
+//      .card-header {
+//        display: flex;
+//        justify-content: center;
+//        h5 {
+//            width: 75%;
+//            background-color: rgb(255,255,255);
+//            border-radius: 2px;
+//        }
+//     }
+
+//      .tab-container {
+//        display: grid;
+//        grid-template-columns: 50% 50%;
+//      }
+
+//      .tab-container {
+//        ul.nav.nav-tabs {
+//        display: flex;
+//        flex-direction: column;
+//        }
+//      }
+// }
+
+// /* faq */
+
+// .faq-content-area {
+//   .contactUsSocial {
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   h4 {
+//     text-align: center;
+//   }
+  
+
+//   .questionCategories {
+//     background-color: rgb(252,252,252);
+//   }
+
+//   // li:empty {
+//   //   display: none;
+//   // }
+  
+//   ul {
+//     margin: 0;
+//   }
+
+//  
+
+//   .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+//     border: none;
+//   }
+//   .nav.tab {
+//     border: 0px;
+//     li {
+//       border: none;
+//       a {
+//         border: none;
+//       }
+//     }
+//   }
+//   .tab-container {
+//     background-color: rgb(255,255,255);
+//     border: 0px;
+//   }
+
+//   .tab-content {
+//     p {
+//       padding: 10px;
+//       text-align: center;
+//     }
+//   }
+  
+//   li.active {
+//     border:  rgb(255,255,255);
+//   }
+
+//   .card-header {
+//     padding: 0px;
+//     margin: 0px;
+//   }
+// }  
+
+// .faq-content-area{
+//   .contactUs {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+//   form {
+//     display: flex;
+//     justify-content: center;
+//     margin: 15px;
+//   }
+// }
+
+// @media only screen and (min-width: 600px) {
+// .faq-content-area {
+
+//   h1, h2 {
+//      text-align: center;
+//   }
+//   button {
+//       width: 100%;
+//   }
+
+//    .card-header {
+//      display: flex;
+//      justify-content: center;
+//      h5 {
+//          width: 75%;
+//          background-color: rgb(255,255,255);
+//          border-radius: 2px;
+//      }
+//   }
+
+//    .tab-container {
+//      display: grid;
+//      grid-template-columns: 50% 50%;
+//    }
+
+//    .tab-container {
+//      ul.nav.nav-tabs {
+//      display: flex;
+//      flex-direction: column;
+//      }
+//    }
+// }
+// .social-media{
+//   width: 50%;
+//   img {
+//     width: 50px;
+//     height: 50px;
+//   }
+//   display: flex;
+//   justify-self: center;
+//   justify-content: space-around;
+// }
+
+// .contactUs {
+//   padding-top: 60px;
+//   display: grid;
+//   grid-template-columns: 50% 50%;
+//   img {
+//     max-height: 60px;
+//     max-width: 50px;
+//   }
+//   input {
+//     width: 90%;
+//   }
+//   textarea {
+//     width: 90%;
+//   }
+//   .wpcf7-submit {
+//     width: 50%;
+//   }
+// }
+// form {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+  
+// }
+// }
