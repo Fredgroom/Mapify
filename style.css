@@ -1076,6 +1076,9 @@ object {
   height: 150vh;
   width: 100vw; }
 
+#input-field {
+  height: 30px; }
+
 .connecting {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1594,7 +1597,7 @@ button, input[type=button], input[type=reset], input[type=submit] {
   font-family: 'Lato', sans-serif;
   color: #9EA9B2; }
 
-.impact-images {
+.flexing-impact {
   padding-top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1603,7 +1606,16 @@ button, input[type=button], input[type=reset], input[type=submit] {
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+
+.flexing-impact h1 {
+  color: #f36; }
+
+h2 {
+  color: #9ea9b2; }
 
 .impact-title {
   padding-top: 90px;
@@ -1629,6 +1641,26 @@ button, input[type=button], input[type=reset], input[type=submit] {
       justify-content: space-around;
   font-size: 25px;
   color: #9EA9B2; }
+
+.take-a-look {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 230px;
+  border: 2px solid #1ed8b3;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #1ed8b3; }
+
+.look-button {
+  padding-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .impact-images {
   display: -webkit-box;
