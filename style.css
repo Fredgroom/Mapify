@@ -1058,9 +1058,8 @@ object {
   text-shadow: 1px 1px #38312C;
   padding-top: 20px; }
 
-.group-icon {
-  width: 51px;
-  height: 64px; }
+.icon-padding {
+  padding-left: 100px; }
 
 .group-div {
   position: relative; }
