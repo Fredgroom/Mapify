@@ -15,9 +15,9 @@ get_header(); ?>
            <section class="signInBackground">
                
                 	<div class="formBackground">
-		   				<img class="redTick" src="<?php echo get_stylesheet_directory_uri(); ?>/icons/redtick.png" alt="">
+		   				<img class="groupIcon" src="<?php echo get_stylesheet_directory_uri(); ?>/icons/group-icon.png" alt="">
 						<h1>Mapify</h1>
-						<h3 class="grey-text">Empowering communities through data.</h3>
+						<p class="grey-text">Empowering communities through data.</p>
 						<?php echo do_shortcode( '[contact-form-7 id="115" title="Sign In" pwd="password"]' ); ?>
 					</div>
              
