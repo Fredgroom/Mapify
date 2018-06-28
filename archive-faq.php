@@ -18,8 +18,10 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<section class="questionCategories">
-				<h2>Question Categories</h2>
-				<img class="searchIcon" src="<?php echo get_template_directory_uri();?>/icons/search-icon.png" />
+				<h2 class="greyText">Question Categories</h2>
+				<hr class="hyphen">
+				<img id="search" class="searchIcon" src="<?php echo get_template_directory_uri();?>/icons/search-icon.png" />
+				<input type="text" id="input" name="uname" required/>
 				<div class="accordion" id="accordionExample">
 					<?php /* Start the Loop */ ?>
 					<?php $counter = 0;?>
@@ -105,7 +107,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		<h2>Get in touch!</h2>
-		<h4>We love to help!</h4>
+		<h4 class="greyText">We love to help!</h4>
 		<hr class="hyphen">
 		
 
@@ -138,5 +140,28 @@ $(document).click(function() {
         $("div").removeClass('in');
     } 
 });
+</script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>			
+<script>
+
+$(function(){
+    $("#input").hide();
+    $("#search").on("click", function(){
+        $("#input, #search").toggle('slow');
+    });
+
+});
+
+$("#input").blur(function(){
+	if ($("#search").hide()) {
+		$("#input, #search").toggle('slow');
+	}
+});
+
+
+
+
+	
+	
 
 </script>

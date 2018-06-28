@@ -3,6 +3,13 @@
 
 
 .faq-content-area {
+  h2 {
+    color: black;
+  }
+  .greyText {
+  color: rgb(138,149,158);
+  }
+
   button {
     display: flex;
     flex-direction: row;
@@ -45,9 +52,9 @@
     li a:active {
               border: 1px solid rgb(231,231,231);
             }
-    .nav-tabs>li>a {
+    // .nav-tabs>li>a {
       
-    }
+    // }
     .tab-pane {
       border: .5px rgb(231,231,231) solid;
       border-top: none;
@@ -94,22 +101,106 @@
             color: white;
           }
   }
+  
+  .contact{
+      display: grid;
+      grid-template-columns: 10% 90%;
+      align-items: center;
+      
+    }
+
   ul {
     margin: 0;
-    .contact {
-      display: grid;
-      grid-template-columns: 20% 80%;
-      img {
+    
+     img {
+      max-height:15px;
+      max-width: 15px;
+      margin: 15px;
+    }
+  }
+  aside {
+    p {
+      text-align: center;
+      color: $mapify-grey-text;
+    }
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    img {
       max-height: 50px;
       max-width: 50px;
+    }
+  }
+  }
 
+  @media only screen and (min-width: 600px) {
+    .faq-content-area {
+      
+    .questionCategories {
+      display: flex;
+      justify-content: center;
+      .btn.btn-link {
+        width: 100%;
+      }
+      .tab-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
+      ul {
+        padding-right: 0;
+      }
+      .tab-pane {
+        height: 100%;
+        border-left: 50%;
+      }
+     .accordion {
+       width: 80vw;
+     }
     }
+    .contactUs {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      input {
+        width: 380px;
+        padding: 20px;
+      }
+      textarea {
+        width: 380px;
+        padding: 20px;
+      }
+      input.wpcf7-submit {
+        width: 170px;
+      }
     }
+    ul{
+      margin: 0 auto;
+      font-size: 20px;
+      height: 100%;
+      display: flex;
+    }
+    aside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #sidebar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contactUsSocial{
+      display: flex;
+      justify-content: space-between;
+    }
+    .contact {
+      margin-bottom: 50px;
+    }
+   
+    
     
   }
   }
-
-
 
 
 //     h1, h2 {
