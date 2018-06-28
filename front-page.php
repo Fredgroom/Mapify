@@ -51,45 +51,60 @@
       <div class="col-md-12 col-lg-10 col-lg-offset-1">
         <div class="carousel carousel-showmanymoveone slide multi-item-carousel" id="theCarousel" data-interval="false">
           <div class="carousel-inner">
-            <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="	fa fa-angle-left"></i></a>
             <div class="item active">
-              
-              <div><a href="#1"><img src="<?php echo get_template_directory_uri(); ?>/icons/read-icon.png" class="img-responsive"></a><div class="icon-title">Read</div><p class="paragraph-text">Read and learn more about Mapify and how it can help you.</p><button class="here-button">Here</button></div>
+              <div class="col-xs-12 col-sm-6 col-md-3"><a href="#1"><img src="<?php echo get_template_directory_uri(); ?>/icons/read-icon.png" class="img-responsive"></a><div class="icon-title">Read</div><p class="paragraph-text">Read and learn more about Mapify and how it can help you.</p><button class="here-button">Read About Mapify Here</button></div>
             </div>
             <div class="item">
-              <div><a href="#2"><img src="<?php echo get_template_directory_uri(); ?>/icons/search.png" class="img-responsive"></a><div class="icon-title">Search</div><p class="paragraph-text">Search any area or community around the UK to get in depth analytics of that area.</p><button class="search-button">Search</button></div>
+              <div class="col-xs-12 col-sm-6 col-md-3"><a href="#1"><img src="<?php echo get_template_directory_uri(); ?>/icons/search.png" class="img-responsive"></a><div class="icon-title">Search</div><p class="paragraph-text">Search any area or community around the UK to get in depth analytics of that area.</p><button class="search-button">Search Using Mapify</button></div>
             </div>
             <div class="item">
-              <div><a href="#3"><img src="<?php echo get_template_directory_uri(); ?>/icons/sign-up.png" class="img-responsive"></a><div class="icon-title">Sign up</div><p class="paragraph-text">Become a part of the Mapify family to receieve more in depth data.</p><button class="signup-button">Sign Up</button></div>
+              <div class="col-xs-12 col-sm-6 col-md-3"><a href="#1"><img src="<?php echo get_template_directory_uri(); ?>/icons/sign-up.png" class="img-responsive"></a><div class="icon-title">Sign up</div><p class="paragraph-text">Become a part of the Mapify family to receieve more in depth data.</p><button class="signup-button">Sign Up With Mapify</button></div>
             </div>
             <div class="item">
-              <div><a href="#4"><img src="<?php echo get_template_directory_uri(); ?>/icons/insights-icon.png" class="img-responsive"></a><div class="icon-title">Insights</div><p class="paragraph-text">Read more about our community partners</p><button class="insights-button">Get Insights</button></div>
+              <div class="col-xs-12 col-sm-6 col-md-3"><a href="#1"><img src="<?php echo get_template_directory_uri(); ?>/icons/insights-icon.png" class="img-responsive"></a><div class="icon-title">Insights</div><p class="paragraph-text">Read more about our community partners</p><button class="insights-button">Get Insights From Mapify</button></div>
             </div>
           </div>
-
-          
+          <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="	fa fa-angle-left"></i></a>
           <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
-
         </div>
       </div>
     </div>
   </div>
 
-<div id="desktopCarousel" class="fullScreenCarousel">
-              
-              <div><a href="#1"><img src="<?php echo get_template_directory_uri(); ?>/icons/read-icon.png" class="img-responsive"></a><div class="icon-title">Read</div><p class="paragraph-text">Read and learn more about Mapify and how it can help you.</p><button class="here-button">Here</button></div>
-            </div>
-            <div class="item">
-              <div><a href="#2"><img src="<?php echo get_template_directory_uri(); ?>/icons/search.png" class="img-responsive"></a><div class="icon-title">Search</div><p class="paragraph-text">Search any area or community around the UK to get in depth analytics of that area.</p><button class="search-button">Search</button></div>
-            </div>
-            <div class="item">
-              <div><a href="#3"><img src="<?php echo get_template_directory_uri(); ?>/icons/sign-up.png" class="img-responsive"></a><div class="icon-title">Sign up</div><p class="paragraph-text">Become a part of the Mapify family to receieve more in depth data.</p><button class="signup-button">Sign Up</button></div>
-            </div>
-            <div class="item">
-              <div><a href="#4"><img src="<?php echo get_template_directory_uri(); ?>/icons/insights-icon.png" class="img-responsive"></a><div class="icon-title">Insights</div><p class="paragraph-text">Read more about our community partners</p><button class="insights-button">Get Insights</button></div>
-            </div>
-          </div>
 <!-- section ends  -->
+  </section>
+  <section id="how-it-works-section2">
+  <h1 class="how-it-works-title">How it works</h1>
+    <div class="hiwContainer">
+      <div class="hiwThumbnail">
+      <img src="<?php echo get_template_directory_uri(); ?>/icons/read-icon.png">
+      <h2>Read</h2>
+      <hr class="hyphen">
+      <p>Read and learn more about Mapify and how it can help you.</p>
+      <button>Here</button>
+      </div>
+      <div class="hiwThumbnail">
+      <img src="<?php echo get_template_directory_uri(); ?>/icons/search.png">
+      <h2>Search</h2>
+      <hr class="hyphen">
+      <p>Search any area or community around the UK to get in depth analytics of that area.</p>
+      <button>Search</button>
+      </div>
+      <div class="hiwThumbnail">
+      <img src="<?php echo get_template_directory_uri(); ?>/icons/sign-up.png">
+      <h2>Sign Up</h2>
+      <hr class="hyphen">
+      <p>Become a part of the Mapify family to recieve more in depth data.</p>
+      <button>Sign Up</button>
+      </div>
+      <div class="hiwThumbnail">
+      <img src="<?php echo get_template_directory_uri(); ?>/icons/insights-icon.png">
+      <h2>Insights</h2>
+      <hr class="hyphen">
+      <p>Read more about our community partners. </p>
+      <button>Insights</button>
+      </div>
+    </div>
   </section>
 <!-- ------------------------ -->
 <!-- ------------------------ -->
@@ -282,7 +297,7 @@ jQuery(document).scroll(function() {
 });
 </script>
 
-<!-- <script>
+<script>
       (function(){
       jQuery('#theCarousel').carousel();
       }());
@@ -308,4 +323,4 @@ jQuery(document).scroll(function() {
             interval: false
         });
       }());
-    </script> -->
+    </script>

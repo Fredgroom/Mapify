@@ -1,3 +1,6 @@
+#how-it-works-section2 {
+  display: none;
+}
 
 .how-it-works{
   h1 {
@@ -5,7 +8,6 @@
   }
   display: flex;
   flex-direction: column;
-
   .left.carousel-control {
     background: none;
     display: flex;
@@ -18,30 +20,79 @@
     align-items: center;
     justify-content: center;
   }
-  .carousel-inner {
+  .how-to-icons {
     display: flex;
     justify-content: center;
   }
-  .col-xs-12.col-sm-6.col-md-3{
+ 
+  .col-xs-12.col-sm-6.col-md-3 {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 10px;
+    p {
+      display: none;
+    }
+    .icon-title{
+      display: none;
+    }
   }
-}
-
-#desktopCarousel{
-    display:none;
-    div.item {
-    display: none;
+  .carousel .carousel-showmanymoveone .slide .multi-item-carousel {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    color: rgb(50,219,185);
+    background-color: white;
+    border: 2px solid rgb(50,219,185);
+    padding: 20px 100px;
+    margin: 20px 20px;
+    }
+    .fa-angle-right {
+      color: black;
+    }
+    .fa-angle-left {
+      color: black;
     }
   }
 
 @media only screen and (min-width: 600px) {
-  .how-it-works{
-  display: none;
+  #how-it-works-section {
+    display: none;
   }
+
+  #how-it-works-section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hiwContainer{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+    .hiwThumbnail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      h2 {
+        color: black;
+      }
+      p {
+        text-align: center;
+      }
+      button {
+        position: relative;
+        bottom: 10px;
+        color: rgb(50,219,185);
+        background-color: white;
+        border: 2px solid rgb(50,219,185);
+      }
+    }
+  }
+
+  
+  
 }
 
