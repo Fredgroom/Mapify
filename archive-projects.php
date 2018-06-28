@@ -8,6 +8,15 @@
 
 get_header(); ?>
 
+
+
+
+
+
+
+<!-- // Projects for real -->
+
+
 	<div id="primary" class="content-area">
 		<main id="main" class="projects-site-main" role="main">
 
