@@ -1,3 +1,16 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+h1 h2 h3 h4 h5 h6 p a {
+    font-family: 'Lato', sans-serif;
+}
+
+.hyphen{
+    width: 40px;
+    height: 2px;
+    background-color: black;
+  }
+
+  .greyText {
+    color: rgb(138,149,158);
+    }

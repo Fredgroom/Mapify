@@ -221,6 +221,17 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+h1 h2 h3 h4 h5 h6 p a {
+  font-family: 'Lato', sans-serif; }
+
+.hyphen {
+  width: 40px;
+  height: 2px;
+  background-color: black; }
+
+.greyText {
+  color: #8a959e; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -606,418 +617,12 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
-.site-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .site-footer .mobileFooterMenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; }
-  .site-footer .social-media img {
-    display: none; }
-  .site-footer p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .site-footer a {
-    color: #a0a9b1; }
-
-.desktopFooterMenu {
-  display: none; }
-
-@media only screen and (min-width: 600px) {
-  .desktopFooterMenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; }
-  .site-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .site-footer .social-media {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-    .site-footer .social-media img {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 50px; }
-  .site-info {
-    display: grid;
-    grid-template-columns: 75% 25%; }
-    .site-info .mobileFooterMenu {
-      display: none; } }
-
-.signUp-content-area .headerSignUp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 15px; }
-
-.signUp-content-area .ajax-loader {
-  display: none; }
-
-.signUp-content-area .signUpIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 50px;
-  margin-top: 30px; }
-  .signUp-content-area .signUpIcons .greyEnvelope {
-    background-image: url("../../icons/Mail.png"); }
-  .signUp-content-area .signUpIcons .redTick {
-    width: 80px;
-    height: 80px; }
-  .signUp-content-area .signUpIcons .redCircle {
-    background-color: white;
-    border-color: #ff3366;
-    border-style: solid;
-    border-radius: 50%;
-    border-width: 5px;
-    height: 80px;
-    width: 80px; }
-  .signUp-content-area .signUpIcons .greyCircle {
-    border-radius: 50%;
-    border-width: 5px;
-    height: 60px;
-    width: 60px;
-    border: 10px;
-    background: #e9ebec; }
-  .signUp-content-area .signUpIcons .largetick {
-    margin: auto; }
-  .signUp-content-area .signUpIcons hr {
-    -ms-flex-item-align: center;
-        align-self: center;
-    width: 20%;
-    margin: 0; }
-
-.signUp-content-area .signUpTitles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .signUp-content-area .signUpTitles h1 {
-    font-size: 20px;
-    margin: auto; }
-
-.signUp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .signUp form {
-    width: 85vw; }
-  .signUp .wpcf7-select {
-    background-color: #e9ebec;
-    color: #a0a9b1;
-    border: none; }
-  .signUp label {
-    width: 100%;
-    padding: 15px 10px; }
-    .signUp label input {
-      width: 100%;
-      border: none;
-      background-color: #e9ebec;
-      color: #a0a9b1; }
-  .signUp .wpcf7-list-item-label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 10px; }
-  .signUp .wpcf7-list-item {
-    display: grid;
-    grid-template-columns: 10% 90%; }
-    .signUp .wpcf7-list-item input {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      justify-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-      color: #ff3366;
-      border-color: black;
-      margin: 0;
-      font-size: 30px; }
-    .signUp .wpcf7-list-item input:checked {
-      background-color: #ff3366;
-      color: white; }
-  .signUp .wpcf7-submit {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-self: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 10px auto;
-    background-color: #ff3366;
-    border-radius: 8px;
-    font-size: 20px;
-    color: white;
-    width: 30%;
-    text-shadow: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    padding: 20px 0; }
-    .signUp .wpcf7-submit input {
-      text-align: center; }
-  .signUp .wpcf7-submit:hover {
-    background-color: #ff3366;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-
-.signUpContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.email-sent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 80px; }
-  .email-sent .mail {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
-    width: 50%; }
-
-.allDone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10%; }
-  .allDone img {
-    width: 250px;
-    height: 250px; }
-
-@media only screen and (min-width: 600px) {
-  .signUpBackground {
-    background-image: url("../../images/signup.png");
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .signUpBackground .signUpContainer {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      padding: 10px;
-      padding-top: 25px;
-      margin: 75px auto;
-      background-color: white;
-      width: 60vw; }
-  .signUp form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    padding: 15px; }
-    .signUp form label input {
-      padding-left: 15px;
-      padding-top: 10px;
-      padding-bottom: 10px; }
-  .signUp .doubleLine {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .signUp .doubleLine p {
-      width: 45%; }
-  .signUp .wpcf7-select {
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-  .signUp .wpcf7-submit {
-    margin: 10px auto;
-    background-color: #ff3366;
-    border-radius: 8px;
-    font-size: 20px;
-    color: white;
-    width: 30%;
-    text-shadow: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    padding: 20px 0; } }
-
-@media only screen and (min-width: 1000px) {
-  .signUpBackground .signUpContainer {
-    width: 50vw; } }
-
-.signUpBackground .signUpContainer1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.signUpBackground .signUpContainer2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.signUpBackground .signUpContainer3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.formBackground {
-  margin: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .formBackground img {
-    max-width: 100px; }
-  .formBackground form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-
-@media only screen and (min-width: 600px) {
-  .signInBackground {
-    background-image: url("../../images/signup.png");
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 50px; }
-    .signInBackground .formBackground {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      justify-self: center;
-      background-color: white;
-      padding: 50px 50px;
-      margin: 10px 10px; }
-      .signInBackground .formBackground .sameLine {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; }
-        .signInBackground .formBackground .sameLine .wpcf7-list-item {
-          margin: 0px; }
-        .signInBackground .formBackground .sameLine .wpcf7-submit {
-          width: 50%; }
-    .signInBackground img {
-      max-width: 100px; } }
-
 .home-hero {
   height: 150vh;
   width: 100vw; }
+
+#input-field {
+  height: 30px; }
 
 .connecting {
   display: -webkit-box;
@@ -1537,7 +1142,7 @@ button, input[type=button], input[type=reset], input[type=submit] {
   font-family: 'Lato', sans-serif;
   color: #9EA9B2; }
 
-.impact-images {
+.flexing-impact {
   padding-top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1546,7 +1151,16 @@ button, input[type=button], input[type=reset], input[type=submit] {
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+
+.flexing-impact h1 {
+  color: #f36; }
+
+h2 {
+  color: #9ea9b2; }
 
 .impact-title {
   padding-top: 90px;
@@ -1573,6 +1187,26 @@ button, input[type=button], input[type=reset], input[type=submit] {
   font-size: 25px;
   color: #9EA9B2; }
 
+.take-a-look {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 230px;
+  border: 2px solid #1ed8b3;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #1ed8b3; }
+
+.look-button {
+  padding-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .impact-images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1596,7 +1230,10 @@ button, input[type=button], input[type=reset], input[type=submit] {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-color: #fcfcfc; }
+  .partners-container h1 {
+    font-size: 50px; }
   .partners-container .article-containers {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1606,6 +1243,7 @@ button, input[type=button], input[type=reset], input[type=submit] {
         -ms-flex-direction: column;
             flex-direction: column; }
     .partners-container .article-containers .partner-article {
+      background-color: white;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1616,11 +1254,31 @@ button, input[type=button], input[type=reset], input[type=submit] {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      border: solid black 1px;
-      margin: 10px;
-      padding: 10px; }
+      margin: 4%; }
       .partners-container .article-containers .partner-article h2 {
+        color: black;
         text-align: center; }
+      .partners-container .article-containers .partner-article .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 15px; }
+        .partners-container .article-containers .partner-article .row a {
+          color: #ff3f6f; }
+        .partners-container .article-containers .partner-article .row img {
+          margin-left: 50px;
+          max-height: 15px;
+          max-width: 15px; }
+      .partners-container .article-containers .partner-article p {
+        color: #8a959e;
+        text-align: center;
+        margin: 15px 5px; }
 
 @media only screen and (min-width: 600px) {
   .partners-container .article-containers {
@@ -1683,6 +1341,12 @@ button, input[type=button], input[type=reset], input[type=submit] {
   .projects-site-main .article-container {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%; } }
+
+.faq-content-area h2 {
+  color: black; }
+
+.faq-content-area .greyText {
+  color: #8a959e; }
 
 .faq-content-area button {
   display: -webkit-box;
@@ -1783,11 +1447,554 @@ button, input[type=button], input[type=reset], input[type=submit] {
     text-shadow: none;
     color: white; }
 
+.faq-content-area .contact {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .faq-content-area ul {
   margin: 0; }
-  .faq-content-area ul .contact {
+  .faq-content-area ul img {
+    max-height: 15px;
+    max-width: 15px;
+    margin: 15px; }
+
+.faq-content-area aside p {
+  text-align: center;
+  color: #a0a9b1; }
+
+.faq-content-area .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .faq-content-area .social-media img {
+    max-height: 50px;
+    max-width: 50px; }
+
+@media only screen and (min-width: 600px) {
+  .faq-content-area .questionCategories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .faq-content-area .questionCategories .btn.btn-link {
+      width: 100%; }
+    .faq-content-area .questionCategories .tab-container {
+      display: grid;
+      grid-template-columns: 50% 50%; }
+    .faq-content-area .questionCategories ul {
+      padding-right: 0; }
+    .faq-content-area .questionCategories .tab-pane {
+      height: 100%;
+      border-left: 50%; }
+    .faq-content-area .questionCategories .accordion {
+      width: 80vw; }
+  .faq-content-area .contactUs {
     display: grid;
-    grid-template-columns: 20% 80%; }
-    .faq-content-area ul .contact img {
-      max-height: 50px;
-      max-width: 50px; }
+    grid-template-columns: 50% 50%; }
+    .faq-content-area .contactUs input {
+      width: 380px;
+      padding: 20px; }
+    .faq-content-area .contactUs textarea {
+      width: 380px;
+      padding: 20px; }
+    .faq-content-area .contactUs input.wpcf7-submit {
+      width: 170px; }
+  .faq-content-area ul {
+    margin: 0 auto;
+    font-size: 20px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .faq-content-area aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .faq-content-area #sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .faq-content-area .contactUsSocial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .faq-content-area .contact {
+    margin-bottom: 50px; } }
+
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .site-footer .mobileFooterMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+  .site-footer .social-media img {
+    display: none; }
+  .site-footer p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #a0a9b1; }
+  .site-footer a {
+    color: #a0a9b1; }
+
+.desktopFooterMenu {
+  display: none; }
+
+@media only screen and (min-width: 600px) {
+  .desktopFooterMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+  .site-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .site-footer .social-media {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .site-footer .social-media img {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50px;
+      margin-right: 15px; }
+  .site-info {
+    display: grid;
+    grid-template-columns: 75% 25%; }
+    .site-info .mobileFooterMenu {
+      display: none; } }
+
+.formBackground {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .formBackground .wpcf7-submit {
+    background-color: #ff3366;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 3px; }
+  .formBackground .wpcf7-submit:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .formBackground img {
+    max-width: 100px; }
+  .formBackground form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .formBackground p {
+    color: #8a959e; }
+  .formBackground a.greyText {
+    text-decoration: underline; }
+  .formBackground div.spaceBetween {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .formBackground span.wpcf7-list-item.first.last {
+    margin: none; }
+  .formBackground .wpcf7.sameLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .formBackground .wpcf7.sameLine a {
+      text-decoration: underline; }
+  .formBackground input {
+    background-color: #e9ebeb;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    margin: 10px; }
+
+@media only screen and (min-width: 600px) {
+  .signInBackground {
+    background-image: url("../../images/signup.png");
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 50px; }
+    .signInBackground .formBackground {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      justify-self: center;
+      background-color: white;
+      padding: 50px 50px;
+      margin: 10px 10px; }
+      .signInBackground .formBackground .sameLine {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .signInBackground .formBackground .sameLine .wpcf7-list-item {
+          margin: 0px; }
+        .signInBackground .formBackground .sameLine .wpcf7-submit {
+          width: 50%; }
+    .signInBackground img {
+      max-width: 100px; } }
+
+.signUp-content-area .headerSignUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px; }
+
+.signUp-content-area .ajax-loader {
+  display: none; }
+
+.signUp-content-area .signUpIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  margin-top: 30px; }
+  .signUp-content-area .signUpIcons .greyEnvelope {
+    background-image: url("../../icons/Mail.png"); }
+  .signUp-content-area .signUpIcons .redTick {
+    width: 80px;
+    height: 80px; }
+  .signUp-content-area .signUpIcons .redCircle {
+    background-color: white;
+    border-color: #ff3366;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 5px;
+    height: 80px;
+    width: 80px; }
+  .signUp-content-area .signUpIcons .greyCircle {
+    border-radius: 50%;
+    border-width: 5px;
+    height: 60px;
+    width: 60px;
+    border: 10px;
+    background: #e9ebec; }
+  .signUp-content-area .signUpIcons .largetick {
+    margin: auto; }
+  .signUp-content-area .signUpIcons hr {
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 20%;
+    margin: 0; }
+
+.signUp-content-area .signUpTitles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .signUp-content-area .signUpTitles h1 {
+    font-size: 20px;
+    margin: auto; }
+
+.signUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .signUp form {
+    width: 85vw; }
+  .signUp .wpcf7-select {
+    background-color: #e9ebec;
+    color: #a0a9b1;
+    border: none; }
+  .signUp label {
+    width: 100%;
+    padding: 15px 10px; }
+    .signUp label input {
+      width: 100%;
+      border: none;
+      background-color: #e9ebec;
+      color: #a0a9b1; }
+  .signUp .wpcf7-list-item-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 10px; }
+  .signUp .wpcf7-list-item {
+    display: grid;
+    grid-template-columns: 10% 90%; }
+    .signUp .wpcf7-list-item input {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+      color: #ff3366;
+      border-color: black;
+      margin: 0;
+      font-size: 30px; }
+    .signUp .wpcf7-list-item input:checked {
+      background-color: #ff3366;
+      color: white; }
+  .signUp .wpcf7-submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px auto;
+    background-color: #ff3366;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    width: 30%;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 20px 0; }
+    .signUp .wpcf7-submit input {
+      text-align: center; }
+  .signUp .wpcf7-submit:hover {
+    background-color: #ff3366;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.signUpContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.email-sent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px; }
+  .email-sent .mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 50%; }
+
+.allDone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10%; }
+  .allDone img {
+    width: 250px;
+    height: 250px; }
+
+@media only screen and (min-width: 600px) {
+  .signUpBackground {
+    background-image: url("../../images/signup.png");
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .signUpBackground .signUpContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 10px;
+      padding-top: 25px;
+      margin: 75px auto;
+      background-color: white;
+      width: 60vw; }
+  .signUp form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 15px; }
+    .signUp form label input {
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .signUp .doubleLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .signUp .doubleLine p {
+      width: 45%; }
+  .signUp .wpcf7-select {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .signUp .wpcf7-submit {
+    margin: 10px auto;
+    background-color: #ff3366;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    width: 30%;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 20px 0; } }
+
+@media only screen and (min-width: 1000px) {
+  .signUpBackground .signUpContainer {
+    width: 50vw; } }
+
+.signUpBackground .signUpContainer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.signUpBackground .signUpContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.signUpBackground .signUpContainer3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }

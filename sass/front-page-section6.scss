@@ -16,12 +16,21 @@
   color: #9EA9B2;
 }
 
-.impact-images {
+
+.flexing-impact {
   padding-top: 120px;
   display: flex;
   justify-content: center;
-  justify-content: space-around;
+justify-content: space-around;
+align-items: baseline;
 }
+
+.flexing-impact h1  {
+  color: #f36;
+} h2 {
+  color: #9ea9b2
+}
+
 
 .impact-title {
 padding-top: 90px;
@@ -38,6 +47,25 @@ color: #FF3366;
   justify-content: space-around;
   font-size: 25px;
   color: #9EA9B2;
+}
+
+.take-a-look {
+
+  background-color: Transparent;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 230px;
+    border: 2px solid #1ed8b3;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #1ed8b3;
+}
+
+.look-button {
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
 }
 
 //

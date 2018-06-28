@@ -1,0 +1,97 @@
+
+//Sign In
+
+
+
+.formBackground {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .wpcf7-submit {
+        background-color: rgb(255,51, 102);
+        box-shadow: none;
+        text-shadow: none;
+        color: white;
+        border-radius: 3px;
+
+    }
+    .wpcf7-submit:hover {
+        box-shadow: none;
+    }
+    img {
+      max-width: 100px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       
+    }
+    p {
+        color: rgb(138,149,158);
+        
+    }
+    a.greyText {
+        text-decoration: underline;
+    }
+    div.spaceBetween {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    span.wpcf7-list-item.first.last {
+        margin: none;
+    }
+    .wpcf7.sameLine {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        a {
+            text-decoration: underline;
+        }
+    }
+    input {
+        background-color: rgb(233,235,235);
+        border: none;
+        border-radius: 0;
+        padding: 10px;
+        margin: 10px;
+    }
+   
+  }
+  
+  
+  @media only screen and (min-width: 600px) {
+    .signInBackground {
+      background-image: url('../../images/signup.png');
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+      .formBackground {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        background-color: white;
+        padding: 50px 50px;
+        margin: 10px 10px;
+        .sameLine{
+          display: flex;
+          justify-content: space-between;
+          .wpcf7-list-item {
+            margin: 0px;
+          }
+          .wpcf7-submit {
+            width: 50%;
+          }
+        }
+      }
+      img {
+          max-width: 100px;
+        }
+    }
+    
+  }

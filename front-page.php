@@ -55,7 +55,7 @@
               <div class="col-xs-12 col-sm-6 col-md-3"><a href="#1"><img src="<?php echo get_template_directory_uri(); ?>/icons/read-icon.png" class="img-responsive"></a><div class="icon-title">Read</div><p class="paragraph-text">Read and learn more about Mapify and how it can help you.</p><button class="here-button">Here</button></div>
             </div>
             <div class="item">
-              <div class="col-xs-12 col-sm-6 col-md-3"><a href="#1"><img src="<?php echo get_template_directory_uri(); ?>/icons/Search.png" class="img-responsive"></a><div class="icon-title">Search</div><p class="paragraph-text">Search any area or community around the UK to get in depth analytics of that area.</p><button class="search-button">Search</button></div>
+              <div class="col-xs-12 col-sm-6 col-md-3"><a href="#1"><img src="<?php echo get_template_directory_uri(); ?>/icons/search.png" class="img-responsive"></a><div class="icon-title">Search</div><p class="paragraph-text">Search any area or community around the UK to get in depth analytics of that area.</p><button class="search-button">Search</button></div>
             </div>
             <div class="item">
               <div class="col-xs-12 col-sm-6 col-md-3"><a href="#1"><img src="<?php echo get_template_directory_uri(); ?>/icons/sign-up.png" class="img-responsive"></a><div class="icon-title">Sign up</div><p class="paragraph-text">Become a part of the Mapify family to receieve more in depth data.</p><button class="signup-button">Sign Up</button></div>
@@ -122,11 +122,12 @@ still need to get the image icons from jason  -->
           </div>
 
 
-          <div class="project-buttons">
-<button class="button1">Read more</button>
-<button class="button2">Read more</button>
-<button class="button3">Read more</button>
-          </div>
+                <!-- these buttons all need to link to 'projects' link on nav bar  -->
+                    <div class="project-buttons">
+                       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><button class="button1">Read more</button></a>
+                       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><button class="button1">Read more</button></a>
+                       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><button class="button1">Read more</button></a>
+                    </div>
 
  <!-- section ends  -->
     </section>
@@ -171,35 +172,34 @@ still need to get the image icons from jason  -->
     <h1 class="our-impact-title">Our Impact</h1>
     <h2 class="impact-subheading">See the impact we are making.</h2>
 
+
+      <div class="flexing-impact">
+
  <div class="impact-images">
     <img class="active-users" src="<?php echo get_template_directory_uri(); ?>/icons/3-users.png"></a>
       <h1 class="10938">10,938</h1>
       <h2 class="active-text">Active users</h2>
   </div>
 
+  <div class="impact-images">
+     <img class="clipboard" src="<?php echo get_template_directory_uri(); ?>/icons/clipboard.png"></a>
+       <h1 class="391">391</h1>
+       <h2 class="active-text">Projects we've helped</h2>
+   </div>
 
-<!--
-    <img class="clipboard" src="<?php echo get_template_directory_uri(); ?>/icons/clipboard.png"></a>
-    <img class="connections-made" src="<?php echo get_template_directory_uri(); ?>/icons/Icon.png"></a>
- </div>
+   <div class="impact-images">
+      <img class="2-people-icon" src="<?php echo get_template_directory_uri(); ?>/icons/icon.png"></a>
+        <h1 class="391">391</h1>
+        <h2 class="active-text">Connections made</h2>
+    </div>
+
+  </div>
 
 
-<div class="impact-title">
-
-  <h1 class="10938">10,938</h1>
-  <h1 class="391">391</h1>
-  <h1 class="21713">21,713</h1>
+<!-- take a closer look button - needs to link to sign up page -->
+<div class="look-button">
+   <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><button class="take-a-look">Take a closer look</button></a>
 </div>
-
-<div class="impact-text">
-    <h2 class="active-text">Active users</h2>
-    <h2 class="projects-helped">Projects we've helped</h2>
-    <h2 class="connections-text">Connections made</h2>
-</div> -->
-
-
-
-
 
 
 </section>
@@ -221,21 +221,16 @@ jQuery(document).scroll(function() {
   <script>
       (function(){
       jQuery('#theCarousel').carousel();
-
       }());
-
       (function(){
         jQuery('.carousel-showmanymoveone .item').each(function(){
           var itemToClone = jQuery(this);
-
           for (var i=1;i<4;i++) {
             itemToClone = itemToClone.next();
-
             // wrap around if at end of item collection
             if (!itemToClone.length) {
               itemToClone = jQuery(this).siblings(':first');
             }
-
             // grab item, clone, add marker class, add to collection
             itemToClone.children(':first-child').clone()
               .addClass("cloneditem-"+(i))
@@ -243,7 +238,6 @@ jQuery(document).scroll(function() {
           }
         });
       }());
-
       (function() {
         jQuery('.carousel-showmanymoveone').carousel({
           pause: true,

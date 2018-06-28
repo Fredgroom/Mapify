@@ -16,7 +16,7 @@ get_header(); ?>
 			<header class="page-header">
 				
 					<h1>Our Projects</h1>
-					<p>Take a look at where we've made an impact.</p>
+					<p class="greyText">Take a look at where we've made an impact.</p>
 					
 
 			</header><!-- .page-header -->
