@@ -1605,6 +1605,10 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center; }
 
+ul.sub-menu li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+  margin: 0; }
+
 .impact-images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1616,6 +1620,60 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.our-impact {
+  height: 135vh;
+  width: 100vw; }
+
+.seventh-section {
+  background-color: #1ED8B3; }
+
+.local-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-bottom: 125px;
+  padding-top: 50px;
+  color: white;
+  font-family: 'Lato', sans-serif; }
+
+.wrapping-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px; }
+
+.wrapping-elements > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 50%;
+          flex: 0 50%;
+  padding-bottom: 55px; }
+
+.the-element {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+div .the-element p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px; }
 
 .partners-container {
   padding-top: 200px;
