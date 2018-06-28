@@ -791,6 +791,10 @@ object {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center; }
+    .how-it-works .col-xs-12.col-sm-6.col-md-3 p {
+      display: none; }
+    .how-it-works .col-xs-12.col-sm-6.col-md-3 .icon-title {
+      display: none; }
   .how-it-works .carousel .carousel-showmanymoveone .slide .multi-item-carousel {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -802,7 +806,13 @@ object {
   .how-it-works button {
     color: #32dbb9;
     background-color: white;
-    border: 2px solid #32dbb9; }
+    border: 2px solid #32dbb9;
+    padding: 20px 100px;
+    margin: 20px 20px; }
+  .how-it-works .fa-angle-right {
+    color: black; }
+  .how-it-works .fa-angle-left {
+    color: black; }
 
 @media only screen and (min-width: 600px) {
   #how-it-works-section {

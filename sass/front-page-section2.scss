@@ -31,6 +31,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    p {
+      display: none;
+    }
+    .icon-title{
+      display: none;
+    }
   }
   .carousel .carousel-showmanymoveone .slide .multi-item-carousel {
     display: flex;
@@ -40,7 +46,15 @@
     color: rgb(50,219,185);
     background-color: white;
     border: 2px solid rgb(50,219,185);
-  }
+    padding: 20px 100px;
+    margin: 20px 20px;
+    }
+    .fa-angle-right {
+      color: black;
+    }
+    .fa-angle-left {
+      color: black;
+    }
   }
 
 @media only screen and (min-width: 600px) {
