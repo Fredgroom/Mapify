@@ -68,6 +68,10 @@ color: #FF3366;
   justify-content: center;
 }
 
+ul.sub-menu li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+    margin: 0;
+}
 //
 // .active-text, .projects-helped, .connections-text {
 // font-size: 22px;
