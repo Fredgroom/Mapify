@@ -43,14 +43,14 @@
 
 
  <!-- search icon image -->
-			<div id="search-id">
+			<div id="searchHead">
 					<img class="search-icon" src="<?php echo get_template_directory_uri(); ?>/icons/search-icon.png"/>
 			</div>
 
 
 
     <!-- input search field -->
-			<input type="text" name="firstname" value="" id="input-field">
+			<input id="inputHead" type="text" name="firstname" value="" id="input-field">
 
 
                  <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu' ) ); ?>
@@ -63,8 +63,31 @@
 
 			
 				 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-				<script>
-				 $('#search-id').click(function(){
-      $('#input-field').toggle('slow');
-  });
-	</script>
+			
+			
+			<script>
+			 $(function(){
+				$("#inputHead").hide();
+				$("#searchHead").on("click", function(){
+					$("#inputHead, #searchHead").toggle('slow');
+				});
+				});
+				$("#inputHead").blur(function(){
+					if ($("#searchHead").hide()) {
+						$("#inputHead, #searchHead").toggle('slow');
+					}
+				});
+				</script>
+			<script>
+			$(function(){
+				$(".sub-menu").hide();
+				$("#menu-item-127").on("click", function(){
+					$(".sub-menu").toggle();
+				});
+				$("#menu-item-127").blur(function(){
+					if ($(".sub-menu").hide()) {
+						$(".sub-menu").toggle('slow');
+					}
+				});
+			});
+				</script>

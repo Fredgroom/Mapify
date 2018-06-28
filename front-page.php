@@ -274,28 +274,47 @@ still need to get the image icons from jason  -->
 <!-- end of section -->
 </section>
 
-
-
-
-
-  
-
-  <?php get_footer(); ?>
-
-
 <script>
 var top1 = jQuery('#home-section').offset().top;
 var top2 = jQuery('#how-it-works-section').offset().top - 162;
+
 jQuery(document).scroll(function() {
   var scrollPos = jQuery(document).scrollTop();
   if (scrollPos >= top1 && scrollPos < top2) {
-    // need to display reverse header
+
     jQuery('#masthead').addClass( "reverse-header" );
   } else if (scrollPos >= top2) {
     jQuery('#masthead').removeClass( "reverse-header" );
   }
 });
+    </script>
+
+<script>
+var res1 = jQuery('#home-section').offset().top;
+var res2 = jQuery('#how-it-works-section2').offset().top - 162;
+
+jQuery(document).scroll(function() {
+  var scrollPos = jQuery(document).scrollTop();
+  if (scrollPos >= res1 && scrollPos < res2) {
+
+    jQuery('#masthead').addClass( "reverse-header" );
+  } else if (scrollPos >= res2) {
+    jQuery('#masthead').removeClass( "reverse-header" );
+  }
+});
 </script>
+
+<script>
+  jQuery(document).scroll(function() {
+    if
+  });
+</script>
+  
+
+  <?php get_footer(); ?>
+
+
+
 
 <script>
       (function(){
