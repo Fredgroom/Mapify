@@ -274,6 +274,8 @@ still need to get the image icons from jason  -->
 <!-- end of section -->
 </section>
 
+<?php get_footer();?>
+
 <script>
 var top1 = jQuery('#home-section').offset().top;
 var top2 = jQuery('#how-it-works-section').offset().top - 162;
@@ -303,6 +305,7 @@ jQuery(document).scroll(function() {
   }
 });
 </script>
+
 
 <script>
   jQuery(document).scroll(function() {
