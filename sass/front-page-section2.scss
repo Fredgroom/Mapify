@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 .carousel-showmanymoveone .carousel-control {
   width: 4%;
   background-image: none;
@@ -27,74 +28,48 @@
   .carousel-showmanymoveone .carousel-inner > .prev.right,
   .carousel-showmanymoveone .carousel-inner > .active {
     left: 0;
+=======
+.how-it-works{
+  h1 {
+    text-align: center;
+>>>>>>> master
   }
-  .carousel-showmanymoveone .carousel-inner .cloneditem-1 {
-    display: block;
+  display: flex;
+  flex-direction: column;
+
+  .left.carousel-control {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-}
-@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
-  .carousel-showmanymoveone .carousel-inner > .item.active.right,
-  .carousel-showmanymoveone .carousel-inner > .item.next {
-    -webkit-transform: translate3d(50%, 0, 0);
-            transform: translate3d(50%, 0, 0);
-    left: 0;
+  .right.carousel-control {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .carousel-showmanymoveone .carousel-inner > .item.active.left,
-  .carousel-showmanymoveone .carousel-inner > .item.prev {
-    -webkit-transform: translate3d(-50%, 0, 0);
-            transform: translate3d(-50%, 0, 0);
-    left: 0;
+  .carousel-inner {
+    display: flex;
+    justify-content: center;
   }
-  .carousel-showmanymoveone .carousel-inner > .item.left,
-  .carousel-showmanymoveone .carousel-inner > .item.prev.right,
-  .carousel-showmanymoveone .carousel-inner > .item.active {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    left: 0;
-  }
-}
-@media all and (min-width: 992px) {
-  .carousel-showmanymoveone .carousel-inner > .active.left,
-  .carousel-showmanymoveone .carousel-inner > .prev {
-    left: -33.3%;
-  }
-  .carousel-showmanymoveone .carousel-inner > .active.right,
-  .carousel-showmanymoveone .carousel-inner > .next {
-    left: 33.3%;
-  }
-  .carousel-showmanymoveone .carousel-inner > .left,
-  .carousel-showmanymoveone .carousel-inner > .prev.right,
-  .carousel-showmanymoveone .carousel-inner > .active {
-    left: 0;
-  }
-  .carousel-showmanymoveone .carousel-inner .cloneditem-2,
-  .carousel-showmanymoveone .carousel-inner .cloneditem-3 {
-    display: block;
+  .col-xs-12.col-sm-6.col-md-3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
   }
 }
-@media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
-  .carousel-showmanymoveone .carousel-inner > .item.active.right,
-  .carousel-showmanymoveone .carousel-inner > .item.next {
-    -webkit-transform: translate3d(33.3%, 0, 0);
-            transform: translate3d(33.3%, 0, 0);
-    left: 0;
-  }
-  .carousel-showmanymoveone .carousel-inner > .item.active.left,
-  .carousel-showmanymoveone .carousel-inner > .item.prev {
-    -webkit-transform: translate3d(-33.3%, 0, 0);
-            transform: translate3d(-33.3%, 0, 0);
-    left: 0;
-  }
-  .carousel-showmanymoveone .carousel-inner > .item.left,
-  .carousel-showmanymoveone .carousel-inner > .item.prev.right,
-  .carousel-showmanymoveone .carousel-inner > .item.active {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    left: 0;
-  }
-  .carousel-control {
+
+#desktopCarousel{
     display:none;
+    div.item {
+    display: none;
+    }
   }
+<<<<<<< HEAD
 }
 
 .carousel-control:hover, .carousel-control:focus {
@@ -234,14 +209,12 @@ padding-top: 60px;
 	.glyphicon {
 		top: 65px;
 	}
+=======
+
+@media only screen and (min-width: 600px) {
+  .how-it-works{
+  display: none;
+  }
+>>>>>>> master
 }
 
-@media all and (max-width: 767px) {
-	.glyphicon-menu-right {
-		margin-left: 20px;
-	}
-
-	.glyphicon-menu-left {
-		right: 28px;
-	}
-}
