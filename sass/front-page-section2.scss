@@ -1,5 +1,4 @@
 
-
 .carousel-showmanymoveone .carousel-control {
   width: 4%;
   background-image: none;
@@ -112,8 +111,8 @@
   font-size: 50px;
   display: flex;
   justify-content: center;
-  margin-top: 0;
-  padding-top: 180px;
+  padding-top: 12%;
+  padding-bottom: 3%;
   font-family: 'Lato', sans-serif;
 
 }
@@ -211,13 +210,13 @@ padding-top: 60px;
    }
 }
 
-
-@media all and (min-width: 1600px) {
-	.carousel-main-container {
-		width: 66.66666667%;
-		margin-left: 16.66666667%;
-	}
-}
+//
+// @media all and (max-width: 1600px) {
+// 	// .carousel-main-container {
+// 	// 	width: 66.66666667%;
+// 	// 	margin-left: 16.66666667%;
+// 	}
+// }
 
 .glyphicon {
 	color: #46166b;

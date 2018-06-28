@@ -218,24 +218,33 @@ still need to get the image icons from jason  -->
 <div class="wrapping-elements">
 
     <div class="the-element">
-      <img src="<?php echo get_template_directory_uri(); ?>/icons/google-plus.png"><p>Free to use for local residents and businesses.</p></a></div>
+      <img src="<?php echo get_template_directory_uri(); ?>/icons/no-entry-fee.png"><p>Free to use for local residents and businesses.</p></a></div>
 
   <div class="the-element">
-      <img src="<?php echo get_template_directory_uri(); ?>/icons/google-plus.png"><p>Monthly subscription to gain deep, analytical insights into any community</p></a></div>
+      <img src="<?php echo get_template_directory_uri(); ?>/icons/Coin.png"><p>Monthly subscription to gain deep, analytical insights into any community</p></a></div>
 
   <div class="the-element">
-        <img src="<?php echo get_template_directory_uri(); ?>/icons/google-plus.png"><p>Understand current trends and movements within your community.</p></a></div>
+        <img src="<?php echo get_template_directory_uri(); ?>/icons/Trend.png"><p>Understand current trends and movements within your community.</p></a></div>
 
   <div class="the-element">
-        <img src="<?php echo get_template_directory_uri(); ?>/icons/google-plus.png"><p>Make more informed, community focussed decision.</p></a></div>
+        <img src="<?php echo get_template_directory_uri(); ?>/icons/Lightbulb.png"><p>Make more informed, community focussed decision.</p></a></div>
 
   <div class="the-element">
-        <img src="<?php echo get_template_directory_uri(); ?>/icons/google-plus.png"><p>Dynamic data that’s transparent for the whole community.</p></a></div>
+        <img src="<?php echo get_template_directory_uri(); ?>/icons/Analytics.png"><p>Dynamic data that’s transparent for the whole community.</p></a></div>
 
   <div class="the-element">
-        <img src="<?php echo get_template_directory_uri(); ?>/icons/google-plus.png"><p>Connect with the community on a more personal level.</p></a></div>
+        <img src="<?php echo get_template_directory_uri(); ?>/icons/connect-copy.png"><p>Connect with the community on a more personal level.</p></a></div>
 </div>
 
+    <div class="the-buttons">
+        <div class="sign-up-here">
+           <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><button class="take-a-look">Sign Up here</button></a>
+        </div>
+
+        <div class="register-here">
+           <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><button class="take-a-look">Register here</button></a>
+        </div>
+    </div>
 
 
 <!-- end of section -->
