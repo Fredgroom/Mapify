@@ -1,42 +1,13 @@
-
-<<<<<<< HEAD
-.carousel-showmanymoveone .carousel-control {
-  width: 4%;
-  background-image: none;
-}
-.carousel-showmanymoveone .carousel-control.left {
-  margin-left: 15px;
-}
-.carousel-showmanymoveone .carousel-control.right {
-  margin-right: 15px;
-}
-.carousel-showmanymoveone .cloneditem-1,
-.carousel-showmanymoveone .cloneditem-2,
-.carousel-showmanymoveone .cloneditem-3 {
+#how-it-works-section2 {
   display: none;
 }
-@media all and (min-width: 768px) {
-  .carousel-showmanymoveone .carousel-inner > .active.left,
-  .carousel-showmanymoveone .carousel-inner > .prev {
-    left: -50%;
-  }
-  .carousel-showmanymoveone .carousel-inner > .active.right,
-  .carousel-showmanymoveone .carousel-inner > .next {
-    left: 50%;
-  }
-  .carousel-showmanymoveone .carousel-inner > .left,
-  .carousel-showmanymoveone .carousel-inner > .prev.right,
-  .carousel-showmanymoveone .carousel-inner > .active {
-    left: 0;
-=======
+
 .how-it-works{
   h1 {
     text-align: center;
->>>>>>> master
   }
   display: flex;
   flex-direction: column;
-
   .left.carousel-control {
     background: none;
     display: flex;
@@ -49,172 +20,79 @@
     align-items: center;
     justify-content: center;
   }
-  .carousel-inner {
+  .how-to-icons {
     display: flex;
     justify-content: center;
   }
-  .col-xs-12.col-sm-6.col-md-3{
+ 
+  .col-xs-12.col-sm-6.col-md-3 {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 10px;
-  }
-}
-
-#desktopCarousel{
-    display:none;
-    div.item {
-    display: none;
+    p {
+      display: none;
+    }
+    .icon-title{
+      display: none;
     }
   }
-<<<<<<< HEAD
-}
-
-.carousel-control:hover, .carousel-control:focus {
-	opacity: 1;
-}
-
-.carousel-control, .carousel-control {
-	opacity: 1;
-}
-
-// my custom styling for how it works icons
-
-.how-it-works-title {
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  padding-top: 12%;
-  padding-bottom: 3%;
-  font-family: 'Lato', sans-serif;
-
-}
-
-.how-it-works {
-  background-color: #FCFCFC;
-  height:150vh;
-  width:100vw;
-}
-
-
-// centering the title of each icon
-.carousel-inner {
-text-align: center;
-font-size: 40px;
-padding-top: 60px;
-}
-
-.icon-title {
-  padding-right: 50px;
-  padding-bottom: 30px;
-}
-
-// styling the paragraph for each icon
-.paragraph-text {
-  font-size: 25px;
-  font-weight: lighter;
-  text-align: center;
-  padding-top: 30px;
-  font-family: 'Lato', sans-serif;
-}
-
-// styling the buttons of each icon
-
-    button, input[type=button], input[type=reset], input[type=submit] {
-      font-size: 1.3rem;
-      line-height: 1;
-      padding: .6rem 1rem .4rem; }
-
-  .here-button {
-      background-color: Transparent;
-      background-repeat:no-repeat;
-      border: 2px #1ED8B3 solid;
-      width: 180px;
-      height: 50px;
-      cursor:pointer;
-      overflow: hidden;
-      outline:none;
-      margin-top: 50px;
-      font-family: 'Lato', sans-serif !important;
-}
-
-.search-button {
-  background-color: Transparent;
-  background-repeat:no-repeat;
-  border: 2px #1ED8B3 solid;
-  width: 180px;
-  height: 50px;
-  cursor:pointer;
-  overflow: hidden;
-  outline:none;
-}
-
-.signup-button {
-  background-color: Transparent;
-  background-repeat:no-repeat;
-  border: 2px #1ED8B3 solid;
-  width: 180px;
-  height: 50px;
-  cursor:pointer;
-  overflow: hidden;
-  outline:none;
-}
-
-.insights-button {
-  background-color: Transparent;
-  background-repeat:no-repeat;
-  border: 2px #1ED8B3 solid;
-  width: 180px;
-  height: 50px;
-  cursor:pointer;
-  overflow: hidden;
-  outline:none;
-  margin-top: 85px;
-}
-
-
-@media all and (min-width: 320px) and (max-width: 991px) {
-   .how-to-icons {
-     display: flex;
-     justify-content: center;
-   }
-   .img-responsive {
-     padding-left: 18%;
-   }
-}
-
-//
-// @media all and (max-width: 1600px) {
-// 	// .carousel-main-container {
-// 	// 	width: 66.66666667%;
-// 	// 	margin-left: 16.66666667%;
-// 	}
-// }
-
-.glyphicon {
-	color: #46166b;
-	top: 60px;
-}
-
-@media all and (min-width: 768px) {
-	.glyphicon {
-		top: 62px;
-	}
-}
-
-
-@media all and (min-width: 992px) {
-	.glyphicon {
-		top: 65px;
-	}
-=======
+  .carousel .carousel-showmanymoveone .slide .multi-item-carousel {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    color: rgb(50,219,185);
+    background-color: white;
+    border: 2px solid rgb(50,219,185);
+    padding: 20px 100px;
+    margin: 20px 20px;
+    }
+    .fa-angle-right {
+      color: black;
+    }
+    .fa-angle-left {
+      color: black;
+    }
+  }
 
 @media only screen and (min-width: 600px) {
-  .how-it-works{
-  display: none;
+  #how-it-works-section {
+    display: none;
   }
->>>>>>> master
+
+  #how-it-works-section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hiwContainer{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+    .hiwThumbnail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      h2 {
+        color: black;
+      }
+      p {
+        text-align: center;
+      }
+      button {
+        position: relative;
+        bottom: 10px;
+        color: rgb(50,219,185);
+        background-color: white;
+        border: 2px solid rgb(50,219,185);
+      }
+    }
+  }
+
+  
+  
 }
 
