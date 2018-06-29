@@ -1061,17 +1061,32 @@ object {
   font-weight: bold; }
 
 @media screen and (max-width: 480px) {
-  .project-title, .clapton-text, .church-text, .devonshire-text, h2.see-all, button.button1 {
+  .clapton-text, .church-text, .devonshire-text, h2.see-all, button.button1 {
     display: none; }
   img.clapton-icon {
-    height: 30%;
-    width: 30%; }
-  img.devonshire.icon {
-    height: 40px;
-    width: 40px; }
+    height: 75px;
+    width: 75px; }
+  .project-icons {
+    margin: 0;
+    padding: 0; }
+  img.devonshire-icon {
+    height: 150px;
+    width: 150px; }
   img.church-icon {
-    height: 50%;
-    width: 50%; } }
+    height: 75px;
+    width: 75px; }
+  .project-title h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  .projects-h1 {
+    padding-top: 20px; }
+  .our-projects {
+    height: 360px;
+    width: 100vw; } }
 
 .why-mapify {
   height: 135vh;
@@ -1149,6 +1164,13 @@ object {
   color: black;
   margin-left: 5%;
   margin-right: 5%; }
+
+@media screen and (max-width: 480px) {
+  .why-mapify {
+    height: 700px;
+    width: 100vw; }
+  .where-impact {
+    padding-bottom: 50px; } }
 
 .our-impact {
   height: 135vh;
@@ -1249,10 +1271,16 @@ ul.sub-menu li.dropdown:hover > ul.dropdown-menu {
 @media screen and (max-width: 480px) {
   .impact-images img {
     width: 50%; }
+  .flexing-impact {
+    padding-top: 20px; }
   .active-text {
     font-size: 20px;
     margin-left: 10%;
     margin-right: 10%; } }
+
+@media screen and (max-width: 480px) {
+  .our-impact {
+    height: 500px; } }
 
 .our-impact {
   height: 135vh;
@@ -1367,6 +1395,16 @@ ul.sub-menu li.dropdown:hover > ul.dropdown-menu {
 @media screen and (min-width: 480px) {
   .testing-title, button.testing-button {
     display: none !important; } }
+
+.last-mapify-h1 {
+  padding-left: 40px;
+  font-family: 'Lato', sans-serif;
+  font-size: 55px; }
+
+.last-mapify-h2 {
+  font-family: 'Lato', sans-serif;
+  padding-left: 85px;
+  padding-bottom: 50px; }
 
 .partners-container {
   padding-top: 200px;

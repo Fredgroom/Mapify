@@ -83,13 +83,22 @@ ul.sub-menu li.dropdown:hover > ul.dropdown-menu {
   .impact-images img {
     width: 50%;
   }
+  .flexing-impact {
+    padding-top: 20px;
+  }
   .active-text {
     font-size: 20px;
     margin-left: 10%;
     margin-right: 10%;
   }
+}
+
+@media screen and (max-width: 480px) {
+.our-impact {
+  height: 500px;
+}
+}
   // .our-impact {
   //   height:250px;
   //   width:100%;
   // }
-}

@@ -135,8 +135,9 @@ still need to get the image icons from jason  -->
 
 
          <div class="project-icons">
-<img class="devonshire-icon" src="<?php echo get_template_directory_uri(); ?>/icons/devonshire-icon.png"></a>
+
 <img class="church-icon" src="<?php echo get_template_directory_uri(); ?>/icons/clapton-icon.png"></a>
+<img class="devonshire-icon" src="<?php echo get_template_directory_uri(); ?>/icons/devonshire-icon.png"></a>
 <img class="clapton-icon" src="<?php echo get_template_directory_uri(); ?>/icons/church-icon.png"></a>
          </div>
 
@@ -287,18 +288,22 @@ still need to get the image icons from jason  -->
 <!-- end of section -->
 </section>
 
-<<<<<<< HEAD
+<!-- new section mapify borough -->
+  <section class="indent-1">
+          <h1 class="last-mapify-h1">Mapify Your Borough</h1>
+          <h2 class="last-mapify-h2">Learn about your Community</h2>
+            <img src="<?php echo get_template_directory_uri(); ?>/icons/last-section-images.png">
 
 
 
+  </section>
 
 
+<!-- end section 8  -->
 
-  <?php get_footer(); ?>
 
-=======
 <?php get_footer();?>
->>>>>>> master
+
 
 <script>
 var top1 = jQuery('#home-section').offset().top;
@@ -336,7 +341,7 @@ jQuery(document).scroll(function() {
     if
   });
 </script>
-  
+
 
   <?php get_footer(); ?>
 
