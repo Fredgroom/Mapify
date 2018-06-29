@@ -106,9 +106,7 @@ text-shadow: 1px 1px #38312C;
   left: 80px;
 }
 
-// .search-icon {
-//
-// }
+
 
 
 
@@ -121,10 +119,22 @@ text-shadow: 1px 1px #38312C;
       font-size: 20px;
     }
 
-    .empower { }
+    .empower {
+    text-align: center;
+  }
 
-    .connecting {
-       padding-bottom: 5px;
+.icon-padding a img {
+position: absolute;
+left: 10%;
+}
+
+     .communities, .empower {
+       padding-top: 40px;
+     }
+
+     .connecting {
+       padding-top: 40%;
+       text-align: center;
      }
 
 // hiding the top nav bar when mobile is viewed
@@ -136,6 +146,14 @@ text-shadow: 1px 1px #38312C;
 // gets rid of search glass icon
 
     .search-glass, #secondary-menu {
+      display: none;
+    }
+
+    #search-id {
+      display: none;
+    }
+
+    input#input-field {
       display: none;
     }
 // gets rid of the phonox image

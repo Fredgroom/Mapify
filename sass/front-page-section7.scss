@@ -13,8 +13,7 @@
   justify-content: space-between;
   margin-left: 70px;
   margin-right: 70px;
-  padding-bottom: 105px;
-  padding-top: 70px;
+padding-top: 20px;
   color: white;
   font-family: 'Lato', sans-serif;
 }
@@ -75,4 +74,48 @@ background-color: Transparent;
     border: 2px solid #FCFCFC !important;
     color: #FCFCFC !important;
     padding: 20px 40px 40px 40px;
+}
+
+.testing-hide {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.testing-hide2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .the-element, .local-residents, .councils {
+    display: none;
+  }
+  .testing-title {
+    color: #FCFCFC;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+  }
+    button.testing-button {
+    background-color: Transparent;
+      background-repeat: no-repeat;
+      height: 50px;
+      width: 230px;
+      border: 1.5px solid #FCFCFC;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+      color: #FCFCFC;
+      font-family: 'Lato', sans-serif !important;
+      font-size: 17px;
+      font-weight:200;
+
+  }
+
+}
+
+@media screen and (min-width: 480px) {
+  .testing-title, button.testing-button {
+    display: none !important;
+  }
 }
