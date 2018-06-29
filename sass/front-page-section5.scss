@@ -64,3 +64,12 @@ background-color: #FBFBFB;
   margin-left: 5%;
   margin-right: 5%;
 }
+
+@media screen and (max-width: 480px) {
+.why-mapify {
+    height: 700px;
+    width: 100vw; }
+    .where-impact {
+      padding-bottom: 50px;
+    }
+}
