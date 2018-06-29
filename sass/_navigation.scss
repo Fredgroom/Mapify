@@ -101,36 +101,56 @@ a {
 // 	display: block;
 // }
 //
-// @media screen and (min-width: 768px) {
-// 	.menu-toggle {
+@media screen and (min-width: 768px) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 $base__space-unit;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+// @media screen and (max-width: 600px) {
+// 	.menu-primary-menu-container{
 // 		display: none;
 // 	}
-// 	.main-navigation ul {
-// 		display: block;
+// 	.menu-secondary-menu-container {
+// 		display: none;
 // 	}
-// }
-//
-// .comment-navigation,
-// .posts-navigation,
-// .post-navigation {
-//
-// 	.site-main & {
-// 		margin: 0 0 $base__space-unit;
-// 		overflow: hidden;
+// 	.search-icon {
+// 		display: none;
 // 	}
-//
-// 	.nav-previous {
-// 		float: left;
-// 		width: 50%;
+// 	.navbar {
+// 		img {
+// 			position: absolute;
+// 			left: 50px;
+// 		}
+// 		.hamburger-menu {
+// 			position: absolute;
+// 		}
 // 	}
-//
-// 	.nav-next {
-// 		float: right;
-// 		text-align: right;
-// 		width: 50%;
-// 	}
-// }
 
+// }
 .site-header {
 	background-color: #fff;
 	position:fixed;
@@ -205,12 +225,51 @@ a {
 	color: #FF527E;
 }
 
-
+#inputHead {
+	height: 30px;
+}
 
 .reverse-header #menu-item-40 a {
 	color: #FF527E;
 	text-shadow: 2px 2px #38312C;
 	&:visited {
 	color:#FF527E;
+	}
+}
+
+.reverse-header #menu-item-120 a {
+	color: #FF527E;
+	text-shadow: 2px 2px #38312C;
+	&:visited {
+	color:#FF527E;
+	}
+}
+
+.reverse-header #menu-item-127 a {
+	color: #ffffff;
+	text-shadow: 2px 2px #38312C;
+}
+
+.navbar#primary-menu#menu-item-127 a {
+	padding-right: 80px;
+	font-family: 'Lato', sans-serif;
+  font-size: 20px;
+	&:visited {
+	color:#8F9AA2;
+	}
+}
+
+
+ul.sub-menu {
+	position: relative;
+	list-style: none;
+	border-left: none;
+	right: 25px;
+	padding-left: 0;
+}
+#menu-item-122 {
+	
+	a {
+		max-width: 100%;
 	}
 }
