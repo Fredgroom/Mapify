@@ -16,3 +16,37 @@
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
 }
+
+@media screen and (max-width: 480px) {
+  .why-icons
+  {
+  width: 25%;
+  margin-left: 10% !important;
+  margin-right:  10% !important;
+  }
+  .why-icons img {
+    width: 150px;
+    height: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .mapify-title {
+    padding-top: 70px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  .your-community h2 {
+    display: block;
+    font-size: 20px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+.why-mapify-text .mapify-text {
+  display: none;
+}
+.our-impact {
+  height:150vw;
+  width:100vw;
+}
+}

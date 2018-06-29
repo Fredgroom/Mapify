@@ -715,11 +715,23 @@ object {
 @media screen and (max-width: 480px) {
   .home-hero, .connecting, .communities, .empower {
     font-size: 20px; }
+  .empower {
+    text-align: center; }
+  .icon-padding a img {
+    position: absolute;
+    left: 10%; }
+  .communities, .empower {
+    padding-top: 40px; }
   .connecting {
-    padding-bottom: 5px; }
+    padding-top: 40%;
+    text-align: center; }
   .nav-bar, .menu, li {
     display: none; }
   .search-glass, #secondary-menu {
+    display: none; }
+  #search-id {
+    display: none; }
+  input#input-field {
     display: none; }
   .phonox-info {
     display: none; }
@@ -870,6 +882,31 @@ object {
   font-family: 'Lato', sans-serif;
   font-weight: lighter; }
 
+@media screen and (max-width: 480px) {
+  .why-icons {
+    width: 25%;
+    margin-left: 10% !important;
+    margin-right: 10% !important; }
+  .why-icons img {
+    width: 150px;
+    height: 150px;
+    margin-left: 10%;
+    margin-right: 10%; }
+  .mapify-title {
+    padding-top: 70px; }
+  h1 {
+    font-size: 25px; }
+  .your-community h2 {
+    display: block;
+    font-size: 20px;
+    margin-left: 4%;
+    margin-right: 4%; }
+  .why-mapify-text .mapify-text {
+    display: none; }
+  .our-impact {
+    height: 150vw;
+    width: 100vw; } }
+
 .our-projects {
   height: 150vh;
   width: 100vw; }
@@ -967,6 +1004,19 @@ object {
   font-family: 'Lato', sans-serif;
   color: #FF3366;
   font-weight: bold; }
+
+@media screen and (max-width: 480px) {
+  .project-title, .clapton-text, .church-text, .devonshire-text, h2.see-all, button.button1 {
+    display: none; }
+  img.clapton-icon {
+    height: 30%;
+    width: 30%; }
+  img.devonshire.icon {
+    height: 40px;
+    width: 40px; }
+  img.church-icon {
+    height: 50%;
+    width: 50%; } }
 
 .why-mapify {
   height: 135vh;
@@ -1141,6 +1191,14 @@ ul.sub-menu li.dropdown:hover > ul.dropdown-menu {
       -ms-flex-align: center;
           align-items: center; }
 
+@media screen and (max-width: 480px) {
+  .impact-images img {
+    width: 50%; }
+  .active-text {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%; } }
+
 .our-impact {
   height: 135vh;
   width: 100vw; }
@@ -1161,8 +1219,7 @@ ul.sub-menu li.dropdown:hover > ul.dropdown-menu {
           justify-content: space-between;
   margin-left: 70px;
   margin-right: 70px;
-  padding-bottom: 105px;
-  padding-top: 70px;
+  padding-top: 20px;
   color: white;
   font-family: 'Lato', sans-serif; }
 
@@ -1222,6 +1279,39 @@ ul.sub-menu li.dropdown:hover > ul.dropdown-menu {
   border: 2px solid #FCFCFC !important;
   color: #FCFCFC !important;
   padding: 20px 40px 40px 40px; }
+
+.testing-hide {
+  text-align: center;
+  padding-bottom: 20px; }
+
+.testing-hide2 {
+  text-align: center;
+  padding-top: 20px; }
+
+@media screen and (max-width: 480px) {
+  .the-element, .local-residents, .councils {
+    display: none; }
+  .testing-title {
+    color: #FCFCFC;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200; }
+  button.testing-button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 230px;
+    border: 1.5px solid #FCFCFC;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #FCFCFC;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 17px;
+    font-weight: 200; } }
+
+@media screen and (min-width: 480px) {
+  .testing-title, button.testing-button {
+    display: none !important; } }
 
 .partners-container {
   padding-top: 200px;

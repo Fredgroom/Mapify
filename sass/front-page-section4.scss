@@ -13,6 +13,7 @@
 }
 
 
+
 .project-icons {
 display: flex;
 justify-content: center;
@@ -95,4 +96,24 @@ margin-right: 100px;
   font-family: 'Lato', sans-serif;
   color: #FF3366;
   font-weight: bold;
+}
+
+
+@media screen and (max-width: 480px) {
+  .project-title, .clapton-text, .church-text, .devonshire-text, h2.see-all, button.button1
+  {
+    display: none;
+  }
+   img.clapton-icon {
+    height: 30%;
+    width: 30%;
+  }
+  img.devonshire.icon {
+    height: 40px;
+    width: 40px;
+  }
+  img.church-icon {
+    height: 50%;
+    width: 50%;
+  }
 }
