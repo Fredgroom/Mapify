@@ -1,6 +1,6 @@
 # Mapify theme
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+A WordPress starter theme for the Mapify Project forked from Underscores.
 
 ## Installation
 
@@ -8,7 +8,7 @@ A WordPress starter theme for the Quotes on Dev project, forked from Underscores
 
 Then add me to your `wp-content/themes` directory.
 
-### 2. Rename the `quotesondev-starter-master` directory
+### 2. Rename the `Mapify` directory
 
 Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
 
